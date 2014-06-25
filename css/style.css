@@ -58,16 +58,6 @@ header .navbar-nav.lang {
   margin-top: 10px;
   margin-left: 20px;
   margin-right: 18px;
-}
-header .navbar-nav.lang a {
-  font-family: 'proxima_nova_ltlight';
-  font-size: 14px;
-  color: #FFFFFF;
-  line-height: 20px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  padding: 6px 8px 4px;
-  display: inline-block;
   zoom: 1;
   filter: alpha(opacity=50);
   -webkit-opacity: 0.5;
@@ -78,11 +68,21 @@ header .navbar-nav.lang a {
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
+header .navbar-nav.lang a {
+  font-family: 'proxima_nova_ltlight';
+  font-size: 14px;
+  color: #FFFFFF;
+  line-height: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 6px 8px 4px;
+  display: inline-block;
+}
 header .navbar-nav.lang a.active {
   border-radius: 40px;
   border: 1px solid #FFFFFF;
 }
-header .navbar-nav.lang a:hover {
+header .navbar-nav.lang:hover {
   background-color: transparent;
   zoom: 1;
   filter: alpha(opacity=100);

@@ -78,6 +78,8 @@ header {
       margin-top: 10px;
       margin-left: 20px;
       margin-right: 18px;
+      .opacity(.5);
+      .transition(opacity .2s);
 
       a {
         font-family: @pnl;
@@ -88,19 +90,16 @@ header {
         text-transform: uppercase;
         padding: 6px 8px 4px;
         display: inline-block;
-        .opacity(.5);
-        .transition(opacity .2s);
 
         &.active {
           border-radius: 40px;
           border: 1px solid #FFFFFF;
         }
+      }
 
-        &:hover {
+      &:hover {
           background-color: transparent;
           .opacity(1);
-        }
-
       }
     }
 
@@ -962,6 +961,6 @@ footer {
       color: #999999;
       text-decoration: underline;
     }
-    
+
   }
 }
