@@ -159,7 +159,7 @@ header {
           a {
           border-radius: 40px;
           background: #FBC153;
-          padding: 8px 14px;
+          padding: 8px 15px;
           margin-left: -4px;
           margin-right: -4px;
         }
@@ -173,7 +173,6 @@ header {
       margin-right: 16px;
       .opacity(.5);
       .transition(opacity .2s);
-      float: left;
 
       a {
         font-family: @pnl;
@@ -1236,4 +1235,110 @@ footer {
         margin-top: 40px;
       }
     }
+}
+
+#team {
+  margin-top: -35px;
+  margin-bottom: 80px;
+
+  .team__descr {
+    width: 560px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 55px;
+
+    p {
+      font-family: @pnl;
+      font-size: 22px;
+      color: #000000;
+      line-height: 35px;
+    }
+  }
+  .m-block {
+    text-align: center;
+    text-decoration: none;
+
+    img {
+      display: inline-block;
+      max-width: 200px;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 50px;
+      font-family: @pnr;
+      margin-bottom: 0;
+    }
+
+    p {
+      color: #979797;
+      font-size: 22px;
+      line-height: 27px;
+      font-family: @pnr;
+    }
+  }
+  .carousel-control span {
+    margin-top: -95px;
+  }
+}
+
+#press {
+  padding: 0 35px;
+  margin-top: -30px;
+  padding-bottom: 60px;
+
+  .press__icons-block {
+    .opacity(.5);
+    .transition(all .5s);
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+
+    &:hover {
+      .opacity(1);
+    }
+
+    img {
+      margin: 0 25px;
+    }
+  }
+
+  .press__list {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      span {
+        display: block;
+        font-family: @pnr;
+        font-size: 14px;
+        color: #999999;
+        line-height: 35px;
+      }
+
+      a {
+        font-family: @pnl;
+        font-size: 18px;
+        color: #000000;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .today_lists {
+    ul {
+      a {
+        font-family: @pnl;
+        font-size: 36px;
+        color: #000000;
+        line-height: 50px;
+      }
+    }
+  }
+
+
 }

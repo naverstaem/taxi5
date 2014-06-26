@@ -2002,6 +2002,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/bootstrap.min.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/bootstrap.min.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/font-awesome.min.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -2130,6 +2139,50 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/img\/our-team\/i1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 35322,
+		"inputAbbreviatedPath": "\/img\/our-team\/i1.jpg",
+		"outputAbbreviatedPath": "\/img\/our-team\/i1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/our-team\/i2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 42992,
+		"inputAbbreviatedPath": "\/img\/our-team\/i2.jpg",
+		"outputAbbreviatedPath": "\/img\/our-team\/i2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/our-team\/i3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 45427,
+		"inputAbbreviatedPath": "\/img\/our-team\/i3.jpg",
+		"outputAbbreviatedPath": "\/img\/our-team\/i3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/our-team\/i4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 44922,
+		"inputAbbreviatedPath": "\/img\/our-team\/i4.jpg",
+		"outputAbbreviatedPath": "\/img\/our-team\/i4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/passatpic.png": {
 		"fileType": 32768,
