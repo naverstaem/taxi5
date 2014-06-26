@@ -66,6 +66,9 @@ header .navbar.scroll .logo img.black {
 header .navbar.scroll .main-menu a {
   color: #000;
 }
+header .navbar.scroll .main-menu a:hover {
+  color: #000;
+}
 header .navbar.scroll .main-menu .active a {
   color: #fff;
 }
@@ -115,6 +118,7 @@ header .navbar-nav.main-menu a {
 }
 header .navbar-nav.main-menu a:hover {
   background-color: transparent;
+  color: #fff;
 }
 header .navbar-nav.main-menu li {
   margin: 0 1px;
