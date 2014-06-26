@@ -37,6 +37,7 @@ header {
     margin-left: 8px;
     display: inline-block;
     width: 170px;
+    float: left;
 
     img {
       &.black {
@@ -61,7 +62,8 @@ header {
     right: 0;
     .transition(all .5s);
     z-index: 99;
-
+    background-color: transparent;
+    border-color: transparent;
 
     &.scroll {
         background: rgba(255,255,255, .95);
@@ -113,6 +115,10 @@ header {
               border-color: rgba(0,0,0,0.4);
             }
 
+            &:hover {
+              color: #000;
+            }
+
           }
 
           &:hover {
@@ -162,11 +168,12 @@ header {
     }
 
     &.lang {
-      margin-top: 10px;
-      margin-left: 20px;
+      margin-top: 30px;
+      margin-left: 22px;
       margin-right: 16px;
       .opacity(.5);
       .transition(opacity .2s);
+      float: left;
 
       a {
         font-family: @pnl;
@@ -181,11 +188,12 @@ header {
         &.active {
           border-radius: 40px;
           border: 1px solid #FFFFFF;
-          margin-left: -2px;
+          margin-left: -3px;
         }
 
         &:hover {
           background-color: transparent;
+          color: #fff;
         }
 
       }
@@ -930,11 +938,23 @@ header {
         font-size: 16px;
         color: #FFFFFF;
         line-height: 20px;
+
+        &.twitter {
+          background: url(../img/svg/feedback_twi_wh.svg) 0 3px no-repeat;
+          padding-left: 21px;
+        }
+
+        &.facebook {
+          background: url(../img/svg/feedback_fb_wh.svg) 0 3px no-repeat;
+          padding-left: 23px;
+          padding-top: 2px;
+        }
       }
     }
     .item {
       float: none !important;
       margin: auto;
+      padding: 0 70px;
     }
 
     .carousel-control {

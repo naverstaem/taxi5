@@ -25,6 +25,7 @@ header .logo {
   margin-left: 8px;
   display: inline-block;
   width: 170px;
+  float: left;
 }
 header .logo img.black {
   display: none;
@@ -47,6 +48,8 @@ header .navbar {
   -o-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 99;
+  background-color: transparent;
+  border-color: transparent;
 }
 header .navbar.scroll {
   background: rgba(255, 255, 255, 0.95);
@@ -88,6 +91,9 @@ header .navbar.scroll .lang a {
 header .navbar.scroll .lang a.active {
   border-color: rgba(0, 0, 0, 0.4);
 }
+header .navbar.scroll .lang a:hover {
+  color: #000;
+}
 header .navbar.scroll .lang:hover a.active {
   border-color: #000;
 }
@@ -121,8 +127,8 @@ header .navbar-nav.main-menu li.active a {
   margin-right: -4px;
 }
 header .navbar-nav.lang {
-  margin-top: 10px;
-  margin-left: 20px;
+  margin-top: 30px;
+  margin-left: 22px;
   margin-right: 16px;
   zoom: 1;
   filter: alpha(opacity=50);
@@ -133,6 +139,7 @@ header .navbar-nav.lang {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  float: left;
 }
 header .navbar-nav.lang a {
   font-family: 'proxima_nova_ltlight';
@@ -147,10 +154,11 @@ header .navbar-nav.lang a {
 header .navbar-nav.lang a.active {
   border-radius: 40px;
   border: 1px solid #FFFFFF;
-  margin-left: -2px;
+  margin-left: -3px;
 }
 header .navbar-nav.lang a:hover {
   background-color: transparent;
+  color: #fff;
 }
 header .navbar-nav.lang:hover {
   zoom: 1;
@@ -826,9 +834,19 @@ header .benefits-block .i6 .icon-block {
   color: #FFFFFF;
   line-height: 20px;
 }
+.reviews .rev-block .author.twitter {
+  background: url(../img/svg/feedback_twi_wh.svg) 0 3px no-repeat;
+  padding-left: 21px;
+}
+.reviews .rev-block .author.facebook {
+  background: url(../img/svg/feedback_fb_wh.svg) 0 3px no-repeat;
+  padding-left: 23px;
+  padding-top: 2px;
+}
 .reviews .item {
   float: none !important;
   margin: auto;
+  padding: 0 70px;
 }
 .reviews .carousel-control {
   background-image: none !important;

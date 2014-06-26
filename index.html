@@ -21,47 +21,47 @@
   <body  data-spy="scroll" data-target="header>.navbar" data-offset="150">
     <header id="top">
 
-    <nav class="navbar">
+    <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="row">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                    <a class="logo" href="#top" class="scroll">
-                        <img src="img/svg/logo_wh.svg" alt="" class="white" />
-                        <img src="img/svg/logo_blk.svg" alt="" class="black" />
-                    </a>
+                    <div class="navbar-header">
+                        <a class="logo" href="#top" class="scroll">
+                            <img src="img/svg/logo_wh.svg" alt="" class="white" />
+                            <img src="img/svg/logo_blk.svg" alt="" class="black" />
+                        </a>
 
-                </div>
+                        <ul class="nav navbar-nav navbar-left lang">
+                            <li><a href="" class="active">Рус</a></li>
+                            <li><a href="">En</a></li>
+                        </ul>
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="main-navbar">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
 
-                    <ul class="nav navbar-nav navbar-left lang">
-                        <li><a href="" class="active">Рус</a></li>
-                        <li><a href="">En</a></li>
-                    </ul>
+                    </div>
 
-                    <ul class="nav navbar-nav main-menu">
-                        <li><a href="#benefits">ПРЕИМУЩЕСТВА</a></li>
-                        <li><a href="#app">Приложение</a></li>
-                        <li><a href="#plans">ТАРИФЫ</a></li>
-                        <li><a href="#reviews">ОТЗЫВЫ</a></li>
-                        <li><a href="#about">О НАС</a></li>
-                        <li><a href="#blog">БЛОГ</a></li>
-                    </ul>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="main-navbar">
 
-                    <ul class="nav navbar-nav navbar-right cabinet-order-block">
-                        <li><a href="" class="btn btn-default navbar-btn cabinet-link"><i class="icon"></i>Вход</a></li>
-                        <li><a href="" class="btn btn-default navbar-btn order-link">ЗАКАЗАТЬ</a></li>
-                    </ul>
-                </div>
+                        <ul class="nav navbar-nav main-menu">
+                            <li><a href="#benefits">ПРЕИМУЩЕСТВА</a></li>
+                            <li><a href="#app">Приложение</a></li>
+                            <li><a href="#plans">ТАРИФЫ</a></li>
+                            <li><a href="#reviews">ОТЗЫВЫ</a></li>
+                            <li><a href="#about">О НАС</a></li>
+                            <li><a href="#blog">БЛОГ</a></li>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right cabinet-order-block">
+                            <li><a href="" class="cabinet-link"><i class="icon"></i>Вход</a></li>
+                            <li><a href="" class="order-link">ЗАКАЗАТЬ</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
@@ -789,7 +789,43 @@
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active row col-md-11">
+                <div class="item active row">
+
+                        <a href="" class="col-md-4 rev-block">
+                            <img src="img/reviews/i1.jpg" alt=""/>
+
+                            <article>
+                                <p>Рада, что появилась такая удобная служба. Большое спасибо! Особенно за то ч…</p>
+
+                                <span class="author">Татьяна Степанова</span>
+                            </article>
+                        </a>
+
+                        <a href="" class="col-md-4 rev-block">
+                            <img src="img/reviews/i2.jpg" alt=""/>
+
+                            <article>
+                                <p>В Минск с #taxi5 пришла Европа. Вайфай в машине –
+                                    вот дела. Рад, что блага ци…</p>
+
+                                <span class="author twitter">tariy26</span>
+                            </article>
+                        </a>
+
+                        <a href="" class="col-md-4 rev-block">
+                            <img src="img/reviews/i3.jpg" alt=""/>
+
+                            <article>
+                                <p>Водитель приехал за 6 минут,
+                                    поддержал разговор о бозоне Хиггса. Пребываю в удивлении. Еще очень...</p>
+
+                                <span class="author facebook">Виктор Плотников</span>
+                            </article>
+                        </a>
+
+                </div>
+
+                <div class="item row">
 
                         <a href="" class="col-md-4 rev-block">
                             <img src="img/reviews/i1.jpg" alt=""/>
@@ -845,8 +881,8 @@
         <!-- Nav tabs -->
         <ul class="nav nav-tabs">
             <li class="active"><a href="#mission" data-toggle="tab">Миссия</a></li>
-            <li><a href="#company2" data-toggle="tab">Команда</a></li>
-            <li><a href="#investors2" data-toggle="tab">Пресса</a></li>
+            <li><a href="#team" data-toggle="tab">Команда</a></li>
+            <li><a href="#press" data-toggle="tab">Пресса</a></li>
         </ul>
 
         <!-- Tab panes -->
@@ -870,8 +906,13 @@
 
             </div>
 
-            <div class="tab-pane" id="company2">КОМПАНИЙ</div>
-            <div class="tab-pane" id="investors2">ИНВЕСТОРОВ</div>
+            <div class="tab-pane" id="team">
+                <div class="team__descr">
+                    <p>Мы делаем такси для себя и для вас. Мы устали от хамства, обмана и старых машин. Мы ценим безопасность и высокий сервис.</p>
+                </div>
+
+            </div>
+            <div class="tab-pane" id="press">ИНВЕСТОРОВ</div>
         </div>
 
     </div>
