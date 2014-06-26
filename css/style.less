@@ -1,7 +1,7 @@
 @import "../fonts/stylesheet.css";
 @import "../css/font-awesome.min.css";
 @import "lesshat";
-@import "lesshat-prefixed";
+// @import "lesshat-prefixed";
 
 // Fonts variables
 
@@ -22,6 +22,11 @@ input.error {
   max-width: 1154px !important;
 }
 
+.cb {
+  clear: both;
+  display: block;
+}
+
 header {
   background: url("../img/bgimg.jpg") left center no-repeat;
   .background-size(cover);
@@ -29,21 +34,98 @@ header {
 
   .logo {
     margin-top: 35px;
+    margin-left: 8px;
     display: inline-block;
-  }
+    width: 170px;
 
-  // .container{
-  //   w
-  // }
+    img {
+      &.black {
+        display: none;
+      }
+    }
+  }
 
   .collapse.navbar-collapse {
     margin-top: 20px;
   }
 
   .navbar {
-    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
     margin-left: -10px;
     margin-right: -10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    .transition(all .5s);
+    z-index: 99;
+
+
+    &.scroll {
+        background: rgba(255,255,255, .95);
+        -moz-box-shadow:    0px 1px 3px 0px rgba(0,0,0,0.20);
+        box-shadow:         0px 1px 3px 0px rgba(0,0,0,0.20);
+        padding-top: 0px;
+
+
+        .logo {
+          img {
+            &.white {
+              display: none;
+            }
+            &.black {
+              display: block;
+            }
+          }
+        }
+        .main-menu {
+          a {
+            color: #000;
+          }
+          .active {
+            a {
+              color: #fff;
+            }
+          }
+        }
+
+        .cabinet-link {
+          color: #000 !important;
+
+          i {
+            background: url(../img/svg/keycabinet_bl.svg) no-repeat !important;
+          }
+        }
+
+        .order-link {
+          color: #000 !important;
+        }
+
+        .lang {
+          .opacity(.3);
+
+          a{
+            color: #000;
+
+            &.active {
+              border-color: rgba(0,0,0,0.4);
+            }
+
+          }
+
+          &:hover {
+            a {
+              &.active {
+                border-color: #000;
+              }
+            }
+          }
+        }
+
+    }
+
   }
 
   .navbar-nav {
@@ -57,27 +139,32 @@ header {
         line-height: 17px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        padding: 8px 10px;
+        padding: 8px 11px;
         .transition(all .2s);
 
         &:hover {
+          background-color: transparent;
+        }
+      }
+
+      li {
+        margin: 0 1px;
+        &.active {
+          a {
           border-radius: 40px;
           background: #FBC153;
           padding: 8px 14px;
           margin-left: -4px;
           margin-right: -4px;
         }
-      }
-
-      li {
-        margin: 0 1px;
+        }
       }
     }
 
     &.lang {
       margin-top: 10px;
       margin-left: 20px;
-      margin-right: 18px;
+      margin-right: 16px;
       .opacity(.5);
       .transition(opacity .2s);
 
@@ -85,19 +172,22 @@ header {
         font-family: @pnl;
         font-size: 14px;
         color: #FFFFFF;
-        line-height: 20px;
+        line-height: 14px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        padding: 6px 8px 4px;
+        padding: 10px 8px 7px;
         display: inline-block;
 
         &.active {
           border-radius: 40px;
           border: 1px solid #FFFFFF;
+          margin-left: -2px;
         }
+
         &:hover {
           background-color: transparent;
         }
+
       }
 
       &:hover {
@@ -106,7 +196,7 @@ header {
     }
 
     &.cabinet-order-block {
-      margin-top: 5px;
+      margin-top: 4px;
 
       .btn {
         margin: 0;
@@ -118,7 +208,7 @@ header {
         color: #FFFFFF;
         line-height: 16px;
         letter-spacing: 1px;
-        margin-right: 10px;
+        margin-right: 8px;
         text-transform: uppercase;
         padding-left: 0;
 
@@ -128,8 +218,8 @@ header {
           width: 24px;
           height: 24px;
           float: left;
-          margin-right: 7px;
-          margin-top: -7px;
+          margin-right: 6px;
+          margin-top: -6px;
         }
 
         &:hover {
@@ -140,13 +230,14 @@ header {
       .order-link {
         border-radius: 10px;
         border: 2px solid #FFB31A;
+        margin-right: 6px;
 
         font-family: @pnr;
         font-size: 14px;
         color: #FFFFFF;
         line-height: 17px;
-        letter-spacing: 1px;
-        padding: 20px 32px;
+        letter-spacing: 2px;
+        padding: 20px 28px;
         margin-top: -10px;
 
         -webkit-transition: all .3s;
@@ -166,7 +257,7 @@ header {
 
     &.img-descr-block {
       text-align: center;
-      margin-top: 120px;
+      margin-top: 210px;
       margin-bottom: 65px;
 
 
@@ -189,7 +280,7 @@ header {
           height: 20px;
           display: block;
           position: absolute;
-          top: 15px;
+          top: 11px;
           right: 10px;
         }
       }
@@ -244,6 +335,11 @@ header {
   text-align: center;
   padding-bottom: 40px;
 
+  &.benefits {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
   h2 {
     font-family: @pnr;
     font-size: 80px;
@@ -253,8 +349,8 @@ header {
 
   .nav-tabs {
     display: inline-block;
-    border-radius: 22px;
-    border: 2px solid #E8E8E8;
+    .border-radius(22px);
+    border: none;
     margin-top: 15px;
     margin-bottom: 95px;
 
@@ -268,50 +364,56 @@ header {
       line-height: 18px;
       letter-spacing: 1px;
       margin: 0;
-      border-right: 2px solid #E8E8E8 !important;
+      // border-right: 2px solid #E8E8E8 !important;
       padding: 10px 25px;
     }
 
     li {
       margin: 0;
+      border-top: 2px solid #E8E8E8;
+      border-bottom: 2px solid #E8E8E8;
+      border-right: 2px solid #E8E8E8;
 
       &.active {
+        border: none !important;
+
         a {
           background: #F78107 !important;
           color: #ffffff !important;
-          border-right: 2px solid transparent !important;
-          margin-top: -2px;
-          margin-bottom: -2px;
-          padding-top: 12px !important;
-          padding-bottom: 12px !important;
+          margin-left: -2px !important;
+          padding: 12px 27px;
         }
       }
 
       &:first-child {
+        border-left: 2px solid #E8E8E8;
+        .border-top-left-radius(22px);
+        .border-bottom-left-radius(22px);
+
         a {
-          border-top-left-radius: 22px;
-          border-bottom-left-radius: 22px;
+          .border-top-left-radius(22px);
+          .border-bottom-left-radius(22px);
         }
         &.active {
+          border-left: none;
+          margin-left: 2px;
+
           a {
-            margin-left: -2px !important;
-            padding: 10px 20px;
+            border-left: transparent !important;
           }
         }
       }
 
       &:last-child {
-        a {
-          border-top-right-radius: 22px;
-          border-bottom-right-radius: 22px;
-          border-right: none !important;
-        }
+        border-right: 2px solid #E8E8E8;
+        .border-top-right-radius(22px);
+        .border-bottom-right-radius(22px);
 
-        &.active {
-          a {
-            margin-right: -2px !important;
-            padding: 10px 16px;
-          }
+        a {
+          .border-top-right-radius(22px);
+          .border-bottom-right-radius(22px);
+          border-right: none !important;
+          margin-left: 0;
         }
       }
     }
@@ -321,13 +423,21 @@ header {
     text-align: left;
     float: none !important;
     margin: 0 auto;
+    padding: 0 70px;
+
+    .img-block {
+      text-align: center;
+    }
 
     h2 {
       font-family: @pnl;
       font-size: 50px;
       color: #000000;
-      line-height: 24px;
+      //  Old size
+      // line-height: 24px;
+      line-height: 50px;
       margin-bottom: 40px;
+      margin-top: 0;
     }
 
     p {
@@ -336,13 +446,17 @@ header {
       color: #000000;
       line-height: 35px;
     }
+
+    img {
+      width: 100%;
+    }
   }
 
   .carousel-indicators {
     position: relative;
     margin: 0 auto;
     left: 0;
-    width: 50%;
+    width: 100%;
     margin-top: 45px;
 
     li {
@@ -351,7 +465,7 @@ header {
       display: inline-block;
       text-indent: 0px;
       border: none;
-      margin: 25px;
+      margin: 15px;
 
       &.active {
         width: auto;
@@ -359,7 +473,11 @@ header {
         border-radius: 8px;
         background: #F6F6F6;
         padding: 10px;
-        margin: 15px;
+        margin: 5px;
+      }
+
+      img {
+        max-width: 40px;
       }
     }
   }
@@ -398,7 +516,7 @@ header {
   -webkit-background-size: cover;
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 60px;
+  padding-top: 25px;
   padding-bottom: 80px;
 
   h2 {
@@ -543,6 +661,7 @@ header {
       margin-top: 135px;
       margin-bottom: 165px;
     }
+
 
     .btn {
       border-radius: 10px;
@@ -869,7 +988,7 @@ header {
       a {
         padding-top: 20px !important;
         padding-bottom: 20px !important;
-        padding: 10px 45px !important;
+        padding: 12px 40px !important;
 
       }
     }
@@ -965,4 +1084,136 @@ footer {
     }
 
   }
+}
+
+
+#investors {
+  margin-top: -50px;
+  padding: 0 150px 40px;
+
+  .investors_calc-block {
+    margin-top: 50px;
+  }
+
+  .inverstors__title {
+      p {
+        font-family: @pnl;
+        font-size: 22px;
+        color: #000000;
+        line-height: 35px;
+      }
+  }
+
+  .investors__cars {
+    border-radius: 8px;
+    background: #F6F6F6;
+    border: 1px solid #E8E8E8;
+    padding: 27px;
+
+    .investors__reload {
+      background: url(../img/svg/reload.svg) no-repeat;
+      display: inline-block;
+      width: 30px;
+      height: 24px;
+    }
+
+    .investors__img-block {
+      img {
+        margin-top: 15px;
+      }
+    }
+
+    .investors__descr {
+      margin-top: 55px;
+
+      h2 {
+        font-family: @pnb;
+        font-size: 30px;
+        color: #000000;
+        line-height: 30px;
+      }
+
+      p {
+        color: #A69999;
+        font-size: 24px;
+        line-height: 24px;
+        font-family: @pnr;
+      }
+
+      hr {
+        border-color: #E8E8E8;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .investors__price {
+        font-family: @pnb;
+        font-size: 50px;
+        color: #000000;
+        line-height: 50px;
+      }
+    }
+  }
+
+  .investors__calc {
+      .equally {
+        font-family: @pnr;
+        font-size: 50px;
+        color: #999999;
+        line-height: 50px;
+        margin-top: 150%;
+        display: inline-block;
+      }
+
+      .text-left {
+        margin-top: 20px;
+
+        p {
+          font-family: @pnb;
+          font-size: 40px;
+          color: #000000;
+          line-height: 40px;
+          margin-bottom: 0;
+
+          .or {
+            font-size: 24px;
+            font-weight: normal;
+            font-family: @pnr;
+            margin-left: -5px;
+          }
+
+          .procent {
+            font-size: 40px;
+            line-height: 50px;
+            font-family: @pnr;
+          }
+        }
+
+        hr {
+          margin-top: 12px;
+        }
+      }
+
+      .time {
+        font-family: @pnl;
+        font-size: 22px;
+        color: #999999;
+        line-height: 50px;
+        display: inline-block;
+        margin-top: -10px;
+      }
+
+      .btn {
+        border-radius: 100px;
+        border: 2px solid #FFB31A;
+        font-family: @pnr;
+        font-size: 14px;
+        color: #000000;
+        line-height: 17px;
+        letter-spacing: 2px;
+        display: inline-block;
+        padding: 14px 20px;
+        margin-top: 40px;
+      }
+    }
 }

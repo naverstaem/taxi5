@@ -1,7 +1,9 @@
 # osx noise
 .DS_Store
-.idea
+.idea/
 profile
+bower_components/
+config.codekit
 
 # xcode noise
 build/*

@@ -1,19 +1,36 @@
 $(document).ready(function(){
 
+    function headerScroll() {
+        if ((window.pageYOffset || document.documentElement.scrollTop) > 50) {
+            $('header >.navbar').addClass('scroll');
+        }
+        else {
+            $('header >.navbar').removeClass('scroll');
+            // $('.main-menu li.active').removeClass('active');
+        }
+    }
 
-    $('.fancybox').fancybox();
+    headerScroll();
+    $(document).on('scroll', headerScroll);
 
-    $('.form_class form').validate();
-
-    $('.form_class form').ajaxForm(
-        function() {
-            $("#tnx").fancybox({
-                beforeShow : function(){
-                    $(".fancybox-skin").addClass("form_reset");
-                }
-            }).trigger('click');
+    $(".main-menu a, a.logo").click(function() {
+        $("html, body").animate({
+            scrollTop: $($(this).attr("href")).offset().top-95 + "px"
+        }, {
+            duration: 500
         });
+        return false;
+    });
 
-    $('input[name="phone"]').mask("+7 (999) 999-99-99");
+    var maxHeight = -1;
+    $('#benefits .carousel-inner .item').each(function() {
+        if ($(this).height() > maxHeight){
+            maxHeight = $(this).height();
+        }
+    });
 
-})
+    $('#benefits .carousel-inner .item').each(function() {
+        $(this).height(maxHeight);
+    });
+
+});
