@@ -1,5 +1,6 @@
 @import "../fonts/stylesheet.css";
-@import "../css/font-awesome.min.css";
+@import "font-awesome.min.css";
+@import "animate.css";
 @import "lesshat";
 // @import "lesshat-prefixed";
 
@@ -54,22 +55,26 @@ header {
     padding-top: 15px;
     padding-bottom: 20px;
     margin-bottom: 0;
-    margin-left: -10px;
-    margin-right: -10px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    .transition(all .5s);
+    .transition(background .5s);
     z-index: 99;
     background-color: transparent;
     border-color: transparent;
+    .border-radius(0);
+
+    &.fixed {
+      position: fixed;
+      padding-top: 0px;
+    }
 
     &.scroll {
         background: rgba(255,255,255, .95);
         -moz-box-shadow:    0px 1px 3px 0px rgba(0,0,0,0.20);
         box-shadow:         0px 1px 3px 0px rgba(0,0,0,0.20);
-        padding-top: 0px;
+        // padding-top: 0px;
 
 
         .logo {
@@ -349,6 +354,10 @@ header {
   text-align: center;
   padding-bottom: 40px;
 
+  .carousel-inner {
+    overflow: visible;
+  }
+
   &.benefits {
     padding-top: 40px;
     padding-bottom: 60px;
@@ -512,6 +521,14 @@ header {
     }
 
     &.left {
+      background: -moz-linear-gradient(left,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(left,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+      background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+
       span {
         left: 0;
       }
@@ -1357,6 +1374,7 @@ footer {
   margin: 0;
   background: rgba(45,51,53,0.97);
   overflow-y: auto;
+  
 
   .modal-content {
     background-color: transparent;

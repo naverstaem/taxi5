@@ -1,16 +1,28 @@
 $(document).ready(function(){
 
     function headerScroll() {
+
+        if ((window.pageYOffset || document.documentElement.scrollTop) > 15) {
+            $('header >.navbar').addClass('fixed');
+        }
+        else {
+            $('header >.navbar').removeClass('fixed');
+        }
+
         if ((window.pageYOffset || document.documentElement.scrollTop) > 50) {
             $('header >.navbar').addClass('scroll');
         }
         else {
             $('header >.navbar').removeClass('scroll');
-            // $('.main-menu li.active').removeClass('active');
         }
     }
 
     headerScroll();
+
+    $(document).resize(function(){
+        headerScroll();
+    });
+
     $(document).on('scroll', headerScroll);
 
     $(".main-menu a, a.logo").click(function() {
