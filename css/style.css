@@ -1220,3 +1220,9 @@ footer .copyright a {
 .carousel-inner > .prev {
   left: -150%;
 }
+.carousel-inner > .active.left {
+  left: -150%;
+}
+.carousel-inner > .active.right {
+  left: 150%;
+}
