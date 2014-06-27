@@ -353,11 +353,6 @@ header {
 .tabs-slider-block {
   text-align: center;
   padding-bottom: 40px;
-  overflow: hidden;
-
-  .carousel-inner {
-    overflow: visible;
-  }
 
   &.benefits {
     padding-top: 40px;
@@ -1381,5 +1376,28 @@ footer {
     background-color: transparent;
     color: #fff;
     padding: 0 0 0 100px;
+  }
+}
+
+
+
+.carousel {
+  .item {
+    left: 0 !important;
+    .transition(all 0s); //adjust timing here
+  }
+  .carousel-control {
+    background-image: none; // remove background gradients on controls
+  }
+  // Fade controls with items
+  .next.left,
+  .prev.right {
+    opacity: 1;
+    z-index: 1;
+  }
+  .active.left,
+  .active.right {
+    opacity: 0;
+    z-index: 2;
   }
 }
