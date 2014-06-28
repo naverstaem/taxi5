@@ -59,7 +59,7 @@
 
                         <ul class="nav navbar-nav navbar-right cabinet-order-block">
                             <li><a href="" class="cabinet-link"><i class="icon"></i>Вход</a></li>
-                            <li><a href="" class="order-link" data-toggle="modal" data-target="#myModal" >ЗАКАЗАТЬ</a></li>
+                            <li><a href="" class="order-link" data-toggle="modal" data-target="#textmodal" >ЗАКАЗАТЬ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -794,7 +794,7 @@
                             </article>
                         </a>
 
-                        <a href="" class="col-md-4 rev-block">
+                        <a href="" data-toggle="modal" data-target="#reviews2" class="col-md-4 rev-block">
                             <img src="img/reviews/i2.jpg" alt=""/>
 
                             <article>
@@ -880,7 +880,7 @@
 
         <!-- Tab panes -->
         <div class="tab-content">
-            <div class="tab-pane active clearfix" id="mission">
+            <div class="tab-pane fadeInDown active clearfix" id="mission">
 
                 <div class="row col-md-11">
                     <div class="col-md-5">
@@ -899,7 +899,7 @@
 
             </div>
 
-            <div class="tab-pane" id="team">
+            <div class="tab-pane fadeInDown" id="team">
                 <div class="team__descr">
                     <p>Мы делаем такси для себя и для вас. Мы устали от хамства, обмана и старых машин. Мы ценим безопасность и высокий сервис.</p>
                 </div>
@@ -984,14 +984,33 @@
                     </div>
 
             </div>
-            <div class="tab-pane" id="press">
+            <div class="tab-pane fadeInDown" id="press">
                 <div class="press__icons-block">
-                    <img src="img/press/tutby.png" height="29" width="156" alt="">
-                    <img src="img/press/citydog.png" height="53" width="63" alt="">
-                    <img src="img/press/onliner.png" height="40" width="181" alt="">
-                    <img src="img/press/ont.png" height="61" width="105" alt="">
-                    <img src="img/press/kyky.png" height="62" width="58" alt="">
-                    <img src="img/press/naviny.png" height="33" width="170" alt="">
+
+                    <a href="">
+                        <img src="img/press/tutby.png" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="img/press/citydog.png" height="53" width="63" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="img/press/onliner.png" height="40" width="181" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="img/press/ont.png" height="61" width="105" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="img/press/kyky.png" height="62" width="58" alt="">
+                    </a>
+
+                    <a href="">
+                        <img src="img/press/naviny.png" height="33" width="170" alt="">
+                    </a>
+
                 </div>
 
                 <div class="container">
@@ -1054,11 +1073,13 @@
         </div>
     </footer>
 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <!-- Для модальный окон с текстом добавляется класс text-modal -->
+
+    <div class="modal fade text-modal" id="textmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
 
             <h2 class="modal-title" id="myModalLabel">Работайте с нами</h2>
           </div>
@@ -1081,6 +1102,29 @@
             <p>Закон исключённого третьего, как принято считать, подчеркивает трансцендентальный дедуктивный метод, открывая новые горизонты. Гравитационный парадокс нетривиален. Закон внешнего мира решительно понимает под собой гедонизм, при этом буквы А, В, I, О символизируют соответственно общеутвердительное, общеотрицательное, частноутвердительное и частноотрицательное суждения.</p>
 
             <a href="">Скачать горизонт</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Для модальных окон из блока отзывов добавляется класс review-modal -->
+
+    <div class="modal fade review-modal" id="reviews2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"></span><span class="sr-only">Close</span></button>
+
+            <h2 class="modal-title" id="myModalLabel">tariy26 <img src="img/reviews/i2.jpg" alt=""></h2>
+          </div>
+          <div class="modal-body">
+            <p>В Минск с <a href="" class="tag">#taxi5</a> пришла Европа. Вайфай в машине – вот дела. Рад, что блага цивилизации добрались и до нас.</p>
+
+
+            <div class="social-block">
+                <img src="img/twitter-img.png" alt="">
+            </div>
 
           </div>
         </div>

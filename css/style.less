@@ -74,8 +74,6 @@ header {
         background: rgba(255,255,255, .95);
         -moz-box-shadow:    0px 1px 3px 0px rgba(0,0,0,0.20);
         box-shadow:         0px 1px 3px 0px rgba(0,0,0,0.20);
-        // padding-top: 0px;
-
 
         .logo {
           img {
@@ -158,10 +156,12 @@ header {
         text-transform: uppercase;
         padding: 8px 11px;
         .transition(all .2s);
+        .opacity(.7);
 
         &:hover {
           background-color: transparent;
           color: #fff;
+          .opacity(1);
         }
       }
 
@@ -169,12 +169,17 @@ header {
         margin: 0 1px;
         &.active {
           a {
-          border-radius: 40px;
-          background: #FBC153;
-          padding: 8px 15px;
-          margin-left: -4px;
-          margin-right: -4px;
-        }
+            border-radius: 40px;
+            background: #FBC153;
+            padding: 8px 15px;
+            margin-left: -4px;
+            margin-right: -4px;
+            .opacity(1);
+
+            &:hover {
+              background: #FFB72F;
+            }
+          }
         }
       }
     }
@@ -289,6 +294,7 @@ header {
 
         span {
           position: relative;
+          display: inline-block;
         }
 
         .taxi {
@@ -299,7 +305,7 @@ header {
           height: 20px;
           display: block;
           position: absolute;
-          top: 11px;
+          top: -5px;
           right: 10px;
         }
       }
@@ -384,8 +390,8 @@ header {
       line-height: 18px;
       letter-spacing: 1px;
       margin: 0;
-      // border-right: 2px solid #E8E8E8 !important;
       padding: 10px 25px;
+      .transition(background .5s);
     }
 
     li {
@@ -398,6 +404,7 @@ header {
         border: none !important;
 
         a {
+          .transition(background .5s);
           background: #F78107 !important;
           color: #ffffff !important;
           margin-left: -2px !important;
@@ -478,6 +485,7 @@ header {
     left: 0;
     width: 100%;
     margin-top: 45px;
+    clear: both;
 
     li {
       width: auto;
@@ -1311,16 +1319,23 @@ footer {
   padding-bottom: 60px;
 
   .press__icons-block {
-    .opacity(.5);
+    
     .transition(all .5s);
     display: inline-block;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 80px;
 
-    &:hover {
-      .opacity(1);
+    a {
+      text-decoration: none;
+      .opacity(.5);
+
+      &:hover {
+        .opacity(1);
+      }
     }
+
+    
 
     img {
       margin: 0 25px;
@@ -1371,12 +1386,148 @@ footer {
   margin: 0;
   background: rgba(45,51,53,0.97);
   overflow-y: auto;
-  
 
   .modal-content {
     background-color: transparent;
     color: #fff;
-    padding: 0 0 0 100px;
+    padding: 0 40px 0 77px;
+    .box-shadow(none);
+    border: none;
+
+    .modal-header {
+      border-bottom: none;
+      margin-top: 55px;
+      position: relative;
+      padding: 20px;
+      padding-left: 20px;
+      padding-top: 16px;
+      padding-bottom: 25px;
+
+      .close {
+        position: absolute;
+        left: -35px;
+        background: url(../img/svg/close-btn.svg) no-repeat;
+        width: 40px;
+        height: 48px;
+        top: 35px;
+      }
+    }
+
+    .modal-title {
+      font-family: @pnb;
+      font-size: 50px;
+      color: #FFFFFF;
+      line-height: 61px;
+      margin-bottom: 5px;
+    }
+
+    .modal-body {
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-family: @pnb;
+      line-height: 26px;
+      margin-bottom: 25px;
+      margin-top: 20px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-family: @pnl;
+      line-height: 26px;
+    }
+
+    a {
+      font-size: 18px;
+      font-family: @pnl;
+      line-height: 26px;
+      text-decoration: underline;
+      color: #fff;
+      margin-top: 15px;
+      display: inline-block;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 20px;
+      margin-bottom: 30px;
+
+      li {
+        position: relative;
+        min-height: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-family: @pnl;
+        line-height: 26px;
+      }
+
+      span {
+        font-family: @pnl;
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        // top: 50%;
+        // margin-top: -15px;
+        .border-radius(50%);
+        display: inline-block;
+        text-align: center;
+        padding-top: 2px;
+        color: #FFFFFF;
+        line-height: 26px;
+        border: 1px solid #FFFFFF;
+        position: absolute;
+        left: -56px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    }
+  }
+}
+
+.modal {
+  &.review-modal {
+    .modal-title {
+      text-align: center;
+      
+      img {
+        .border-radius(50%);
+      }
+    }
+
+    .modal-dialog {
+      width: 610px;
+    }
+    .modal-body {
+
+      p {
+        font-size: 40px;
+        line-height: 49px;
+        font-family: @pnl;
+
+        a {
+          font-size: 40px;
+          line-height: 49px;
+        }
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      .social-block {
+        margin-top: 60px;
+        margin-left: -25px;
+        margin-right: -25px;
+      }
+    }
   }
 }
 
@@ -1389,28 +1540,6 @@ footer {
 
   }
 }
-
-// .carousel {
-//   .item {
-//     left: 0 !important;
-//     .transition(all 0s); //adjust timing here
-//   }
-//   .carousel-control {
-//     background-image: none; // remove background gradients on controls
-//   }
-//   // Fade controls with items
-//   .next.left,
-//   .prev.right {
-//     opacity: 1;
-//     z-index: 1;
-//   }
-//   .active.left,
-//   .active.right {
-//     opacity: 0;
-//     z-index: 2;
-//   }
-// }
-
 
 .carousel-inner > .next {
   left: 150%;
