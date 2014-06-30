@@ -45,4 +45,15 @@ $(document).ready(function(){
         $(this).height(maxHeight);
     });
 
+    $('.investors__reload').on('click', function(){
+        event.preventDefault();
+
+        var el = $(this).addClass('rotateIn');
+
+        setTimeout(function() {
+            el.removeClass('rotateIn');
+        }, 1000);
+
+    });
+
 });

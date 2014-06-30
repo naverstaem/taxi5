@@ -1,6 +1,9 @@
 @import "../fonts/stylesheet.css";
 @import "font-awesome.min.css";
 @import "animate.css";
+* {
+  outline: none;
+}
 label.error {
   display: none !important;
 }
@@ -33,6 +36,7 @@ header .logo img.black {
 }
 header .collapse.navbar-collapse {
   margin-top: 20px;
+  float: left;
 }
 header .navbar {
   padding-top: 15px;
@@ -159,7 +163,6 @@ header .navbar-nav.main-menu li.active a:hover {
 header .navbar-nav.lang {
   margin-top: 30px;
   margin-left: 22px;
-  margin-right: 16px;
   zoom: 1;
   filter: alpha(opacity=50);
   -webkit-opacity: 0.5;
@@ -197,7 +200,8 @@ header .navbar-nav.lang:hover {
   opacity: 1;
 }
 header .navbar-nav.cabinet-order-block {
-  margin-top: 4px;
+  margin-top: 17px;
+  margin-right: 30px;
 }
 header .navbar-nav.cabinet-order-block .btn {
   margin: 0;
@@ -211,6 +215,16 @@ header .navbar-nav.cabinet-order-block .cabinet-link {
   margin-right: 8px;
   text-transform: uppercase;
   padding-left: 0;
+  zoom: 1;
+  filter: alpha(opacity=70);
+  -webkit-opacity: 0.7;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  margin-top: 7px;
 }
 header .navbar-nav.cabinet-order-block .cabinet-link .icon {
   background: url("../img/svg/keycabinet_wh.svg") no-repeat;
@@ -223,18 +237,22 @@ header .navbar-nav.cabinet-order-block .cabinet-link .icon {
 }
 header .navbar-nav.cabinet-order-block .cabinet-link:hover {
   background-color: transparent;
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
+  color: #fff;
 }
 header .navbar-nav.cabinet-order-block .order-link {
   border-radius: 10px;
   border: 2px solid #FFB31A;
-  margin-right: 6px;
   font-family: 'proxima_nova_rgregular';
   font-size: 14px;
   color: #FFFFFF;
   line-height: 17px;
   letter-spacing: 2px;
   padding: 20px 28px;
-  margin-top: -10px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
@@ -242,7 +260,8 @@ header .navbar-nav.cabinet-order-block .order-link {
   transition: all .3s;
 }
 header .navbar-nav.cabinet-order-block .order-link:hover {
-  background-color: transparent;
+  background-color: #FFB31A;
+  color: #fff !important;
 }
 header section.img-descr-block {
   text-align: center;
@@ -308,6 +327,15 @@ header .benefits-block .i6 .icon-block {
 .tabs-slider-block.benefits {
   padding-top: 40px;
   padding-bottom: 60px;
+}
+.tabs-slider-block.benefits .carousel-control span {
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  transition: color 0.3s;
+}
+.tabs-slider-block.benefits .carousel-control span:hover {
+  color: #C7C7C7;
 }
 .tabs-slider-block h2 {
   font-family: 'proxima_nova_rgregular';
@@ -638,6 +666,14 @@ header .benefits-block .i6 .icon-block {
   line-height: 17px;
   letter-spacing: 1px;
   margin-top: 20px;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+}
+.mobile-app .subcribe-block button:hover {
+  background: white;
+  color: #000;
 }
 .mobile-app .iphone-block {
   text-align: center;
@@ -671,7 +707,7 @@ header .benefits-block .i6 .icon-block {
   font-family: 'proxima_nova_ltsemibold';
   font-size: 13px;
   color: #000000;
-  line-height: 59px;
+  line-height: 50px;
   letter-spacing: 1px;
   text-decoration: none;
   -webkit-transition: all 0.3s;
@@ -680,7 +716,8 @@ header .benefits-block .i6 .icon-block {
   transition: all 0.3s;
 }
 .mobile-app .screen .btn:hover {
-  background-color: transparent;
+  background-color: #FFB31A;
+  color: #fff;
 }
 .plans {
   padding-bottom: 60px;
@@ -712,6 +749,14 @@ header .benefits-block .i6 .icon-block {
   position: absolute;
   right: -15px;
   bottom: 15px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.plans h2.title .btn:hover {
+  background: #FFB31A;
+  color: #fff;
 }
 .plans .main-plans,
 .plans .other-plans {
@@ -857,6 +902,24 @@ header .benefits-block .i6 .icon-block {
   text-align: center;
   margin-bottom: 75px;
 }
+.reviews .carousel-control span {
+  zoom: 1 !important;
+  filter: alpha(opacity=50) !important;
+  -webkit-opacity: 0.5 !important;
+  -moz-opacity: 0.5 !important;
+  opacity: 0.5 !important;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.reviews .carousel-control span:hover {
+  zoom: 1 !important;
+  filter: alpha(opacity=100) !important;
+  -webkit-opacity: 1 !important;
+  -moz-opacity: 1 !important;
+  opacity: 1 !important;
+}
 .reviews .rev-block {
   display: inline-block;
   padding: 15px;
@@ -944,9 +1007,7 @@ header .benefits-block .i6 .icon-block {
   padding: 10px 40px;
 }
 .about-us .nav-tabs .active a {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
-  padding: 12px 40px !important;
+  padding: 12px 42px !important;
 }
 .about-us .tab-pane {
   text-align: left;
@@ -1125,10 +1186,37 @@ footer .copyright a {
   display: inline-block;
   padding: 14px 20px;
   margin-top: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#investors .investors__calc .btn:hover {
+  background: #FFB31A;
+  color: #fff;
 }
 #team {
   margin-top: -35px;
   margin-bottom: 80px;
+}
+#team .carousel-control span {
+  zoom: 1 !important;
+  filter: alpha(opacity=50) !important;
+  -webkit-opacity: 0.5 !important;
+  -moz-opacity: 0.5 !important;
+  opacity: 0.5 !important;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  color: #343A3C;
+}
+#team .carousel-control span:hover {
+  zoom: 1 !important;
+  filter: alpha(opacity=100) !important;
+  -webkit-opacity: 1 !important;
+  -moz-opacity: 1 !important;
+  opacity: 1 !important;
 }
 #team .team__descr {
   width: 560px;
@@ -1189,6 +1277,10 @@ footer .copyright a {
   -webkit-opacity: 0.5;
   -moz-opacity: 0.5;
   opacity: 0.5;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 #press .press__icons-block a:hover {
   zoom: 1;
@@ -1380,4 +1472,85 @@ footer .copyright a {
 }
 .carousel-inner > .active.right {
   left: 150%;
+}
+@media (max-width: 768px) {
+  .navbar-default .navbar-toggle {
+    margin-top: 30px;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffb31a;
+  }
+  .navbar-default .navbar-toggle:hover .icon-bar {
+    background: #000;
+  }
+  .cabinet-order-block {
+    margin-left: 30px;
+  }
+  .carousel-indicators,
+  .iphone-block {
+    display: none;
+  }
+  .mobile-app {
+    text-align: center;
+    padding-top: 45px;
+  }
+  .mobile-app .list-block {
+    margin-top: 0;
+  }
+  .mobile-app ul {
+    display: inline-block;
+    text-align: center;
+    text-align: left;
+  }
+  header section.img-descr-block h1 {
+    font-size: 100px;
+    line-height: 90px;
+  }
+  .tabs-slider-block h2 {
+    font-size: 55px;
+  }
+  .tabs-slider-block .item {
+    text-align: center;
+  }
+  .tabs-slider-block .item img {
+    max-width: 100% !important;
+    margin-bottom: 40px;
+    width: 300px;
+  }
+  .benefits-block {
+    text-align: center;
+  }
+  .benefits-block .icon-block {
+    margin-left: 0 !important;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+  }
+  .benefits-block .item-block {
+    margin-bottom: 40px;
+  }
+  .navbar-nav.lang {
+    float: left;
+  }
+  .navbar-nav.lang:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .navbar-nav.lang li {
+    float: left;
+  }
+  .plans {
+    text-align: center;
+  }
+  .plans .text-right,
+  .plans .text-left {
+    text-align: center !important;
+  }
+  .plans .price-block {
+    text-align: center;
+  }
+  .plans span.right-block {
+    text-align: left;
+  }
 }
