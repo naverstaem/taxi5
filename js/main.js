@@ -56,4 +56,8 @@ $(document).ready(function(){
 
     });
 
+    $('button.navbar-toggle').click(function(){
+        $('header >.navbar').toggleClass('scroll');
+    });
+
 });

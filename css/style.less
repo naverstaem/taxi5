@@ -54,6 +54,7 @@ header {
   .collapse.navbar-collapse {
     margin-top: 20px;
     float: left;
+    padding-right: 0;
   }
 
   .navbar {
@@ -208,7 +209,7 @@ header {
         &.active {
           border-radius: 40px;
           border: 1px solid #FFFFFF;
-          margin-left: -3px;
+          // margin-left: -3px;
         }
 
         &:hover {
@@ -225,7 +226,7 @@ header {
 
     &.cabinet-order-block {
       margin-top: 17px;
-      margin-right: 30px;
+      margin-right: 5px;
 
       .btn {
         margin: 0;
@@ -1696,9 +1697,20 @@ footer {
       }
     }
 
+    header .navbar{
+        &.fixed {
+          position: absolute !important;
+          padding-top: 15px;
+          background-color: transparent;
+          
+        }
+      }
+
+
     .navbar-nav {
       &.lang {
-        float: left;
+        display: none;
+        
         &:after {
           content: '';
           display: block;
@@ -1733,6 +1745,21 @@ footer {
 
     header .collapse.navbar-collapse {
       float: none;
+    }
+
+    .collapse{
+      &.in {
+        .bg {
+          display: block;
+          background: rgba(255,255,255, .95);
+          position: fixed;
+          
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+        }
+      }
     }
 }
 
