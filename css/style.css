@@ -11,7 +11,7 @@ input.error {
   box-shadow: 0 0 5px red !important;
 }
 .container {
-  max-width: 1154px !important;
+  width: 1154px !important;
 }
 .cb {
   clear: both;
