@@ -62,7 +62,7 @@ header .navbar {
   background-clip: padding-box;
 }
 header .navbar .navbar-header {
-  display: inline-flex;
+  width: 24.7%;
 }
 header .navbar.fixed {
   position: fixed;
