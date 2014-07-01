@@ -1152,6 +1152,17 @@ footer .copyright a {
   display: inline-block;
   width: 30px;
   height: 24px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+#investors .investors__cars .investors__reload:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 #investors .investors__cars .investors__img-block img {
   margin-top: 15px;
