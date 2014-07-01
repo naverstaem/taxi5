@@ -71,6 +71,10 @@ header {
     border-color: transparent;
     .border-radius(0);
 
+    .navbar-header {
+      display: inline-flex;
+    }
+
     &.fixed {
       position: fixed;
       padding-top: 0px;
@@ -161,8 +165,9 @@ header {
         letter-spacing: 1px;
         text-transform: uppercase;
         padding: 8px 11px;
-        .transition(all .2s);
+        .border-radius(40px);
         .opacity(.7);
+        .transition(background-color .4s);
 
         &:hover {
           background-color: transparent;
@@ -173,14 +178,15 @@ header {
 
       li {
         margin: 0 1px;
+
         &.active {
           a {
-            border-radius: 40px;
             background: #FBC153;
             padding: 8px 15px;
             margin-left: -4px;
             margin-right: -4px;
             .opacity(1);
+            .transition(background-color .4s);
 
             &:hover {
               background: #FFB72F;
@@ -225,7 +231,7 @@ header {
     }
 
     &.cabinet-order-block {
-      margin-top: 17px;
+      margin-top: 16px;
       margin-right: 5px;
 
       .btn {
@@ -371,6 +377,7 @@ header {
   text-align: center;
   padding-bottom: 40px;
   overflow: hidden;
+  .transition(height .5s);
 
   &.benefits {
     padding-top: 40px;
@@ -507,6 +514,7 @@ header {
     width: 100%;
     margin-top: 45px;
     clear: both;
+    display: inline-block;
 
     li {
       width: auto;
@@ -681,6 +689,10 @@ header {
       font-family: @pnl;
       font-size: 30px;
       .placeholder(#E8E8E8);
+
+      &[placeholder]:focus::-webkit-input-placeholder {
+        opacity: 0;
+      }
     }
 
     button {
@@ -960,6 +972,7 @@ header {
     background: #343A3C;
     padding-top: 60px;
     padding-bottom: 105px;
+    overflow: hidden;
 
     h2 {
       font-family: @pnb;
@@ -1138,11 +1151,25 @@ footer {
 
     a {
       font-size: 16px;
-      color: #999999;
-      line-height: 20px;
-      text-decoration: underline;
+
+      @color_l: #999999;
+      color: @color_l;
+      line-height: 18px;
+      text-decoration: none;
       display: inline-block;
       margin-top: 19px;
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        content: '';
+        border-bottom: 1px lighten(@color_l, 30%) solid;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        .transition(all .4s);
+      }
     }
   }
 
@@ -1153,13 +1180,27 @@ footer {
       list-style: none;
 
       a {
-        text-decoration: underline;
+        text-decoration: none;
         font-family: @pnr;
         font-size: 16px;
-        color: #999999;
-        line-height: 20px;
+        @color_l: #999999;
+        color: @color_l;
+        line-height: 18px;
         margin-bottom: 11px;
         display: inline-block;
+        text-decoration: none;
+        position: relative;
+
+        &:after {
+          content: '';
+          border-bottom: 1px lighten(@color_l, 30%) solid;
+          position: absolute;
+          left: 0;
+          right: 0;
+          bottom: 0px;
+          .transition(all .4s);
+        }
+
       }
     }
   }
@@ -1442,6 +1483,20 @@ footer {
 }
 
 //  Modal styles
+
+.modal {
+
+  .modal-dialog {
+    .transform(translateX(100%)) !important;
+    .transition(all 200ms) !important;
+  }
+
+  &.in {
+    .modal-dialog {
+      .transform(translateX(0%)) !important;
+    }
+  }
+}
 .modal-dialog {
   position: absolute;
   top: 0;
@@ -1474,6 +1529,8 @@ footer {
         width: 40px;
         height: 48px;
         top: 35px;
+
+        .transition(all .3s);
       }
     }
 
@@ -1844,4 +1901,6 @@ footer {
       }
     }
 }
+
+
 

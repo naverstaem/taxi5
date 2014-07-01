@@ -59,4 +59,20 @@ $(document).ready(function(){
         $('header >.navbar').toggleClass('scroll');
     });
 
+    // $('.modal').on('hidden.bs.modal', function () {
+    //     $(this).parents('.modal').removeClass('in');
+
+    //     setTimeout(function() {
+    //         $(this).modal('hide');
+    //     }, 1000);
+    // });
+
+    // $('#textmodal').on('hidden.bs.modal', function(e) {
+    //     $('#textmodal').removeClass('in');
+
+    //     setTimeout(function() {
+    //         $('#textmodal').modal('hide');
+    //     }, 500);
+    // });
+
 });
