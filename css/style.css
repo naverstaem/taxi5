@@ -335,10 +335,10 @@ header .benefits-block .i6 .icon-block {
   text-align: center;
   padding-bottom: 40px;
   overflow: hidden;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .tabs-slider-block.benefits {
   padding-top: 40px;
