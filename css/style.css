@@ -11,11 +11,14 @@ input.error {
   box-shadow: 0 0 5px red !important;
 }
 .container {
-  width: 1154px !important;
+  max-width: 1154px !important;
 }
 .cb {
   clear: both;
   display: block;
+}
+.symbol {
+  font-family: 'websymbolsligaregular';
 }
 header {
   background: url("../img/bgimg.jpg") left center no-repeat;
@@ -60,9 +63,6 @@ header .navbar {
   -moz-background-clip: padding;
   border-radius: 0;
   background-clip: padding-box;
-}
-header .navbar .navbar-header {
-  width: 24.7%;
 }
 header .navbar.fixed {
   position: fixed;
@@ -115,6 +115,9 @@ header .navbar.scroll .lang a:hover {
 }
 header .navbar.scroll .lang:hover a.active {
   border-color: #000;
+}
+header .navbar-nav {
+  margin: 0;
 }
 header .navbar-nav.main-menu {
   margin-top: 10px;
@@ -185,6 +188,10 @@ header .navbar-nav.lang {
   -moz-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
+  float: left;
+}
+header .navbar-nav.lang li {
+  display: inline-block;
 }
 header .navbar-nav.lang a {
   font-family: 'proxima_nova_ltlight';
@@ -335,10 +342,12 @@ header .benefits-block .i6 .icon-block {
   text-align: center;
   padding-bottom: 40px;
   overflow: hidden;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+}
+.tabs-slider-block .tab-pane {
+  -webkit-transition: all 3s;
+  -moz-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
 }
 .tabs-slider-block.benefits {
   padding-top: 40px;
@@ -1125,8 +1134,22 @@ footer .copyright {
   line-height: 20px;
 }
 footer .copyright a {
+  text-decoration: none;
   color: #999999;
-  text-decoration: underline;
+  display: inline-block;
+  position: relative;
+}
+footer .copyright a:after {
+  content: '';
+  border-bottom: 1px #e5e5e5 solid;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 #investors {
   margin-top: -50px;
@@ -1156,13 +1179,18 @@ footer .copyright a {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  -moz-opacity: 0.5;
+  opacity: 0.5;
 }
 #investors .investors__cars .investors__reload:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
+  zoom: 1;
+  filter: alpha(opacity=100);
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  opacity: 1;
 }
 #investors .investors__cars .investors__img-block img {
   margin-top: 15px;
@@ -1277,7 +1305,6 @@ footer .copyright a {
   opacity: 1 !important;
 }
 #team .team__descr {
-  width: 560px;
   margin: 0 auto;
   text-align: center;
   margin-top: 0px;
@@ -1292,6 +1319,7 @@ footer .copyright a {
 #team .m-block {
   text-align: center;
   text-decoration: none;
+  display: inline-block;
 }
 #team .m-block img {
   display: inline-block;
@@ -1428,14 +1456,15 @@ footer .copyright a {
 .modal-dialog .modal-content .modal-header .close {
   position: absolute;
   left: -35px;
-  background: url(../img/svg/close-btn.svg) no-repeat;
-  width: 40px;
-  height: 48px;
-  top: 35px;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+.modal-dialog .modal-content .modal-header .close .close-icon {
+  font-size: 40px;
+  color: #FFFFFF;
+  line-height: 48px;
 }
 .modal-dialog .modal-content .modal-title {
   font-family: 'proxima_nova_rgbold';
@@ -1463,13 +1492,27 @@ footer .copyright a {
   line-height: 26px;
 }
 .modal-dialog .modal-content a {
-  font-size: 18px;
-  font-family: 'proxima_nova_ltlight';
-  line-height: 26px;
-  text-decoration: underline;
-  color: #fff;
-  margin-top: 15px;
+  font-family: 'proxima_nova_rgregular';
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 18px;
+  margin-top: 20px;
   display: inline-block;
+  text-decoration: none;
+  position: relative;
+}
+.modal-dialog .modal-content a:after {
+  content: '';
+  border-bottom: 1px #ffffff solid;
+  zoom: 1;
+  filter: alpha(opacity=30);
+  -webkit-opacity: 0.3;
+  -moz-opacity: 0.3;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0px;
 }
 .modal-dialog .modal-content ul {
   list-style: none;
@@ -1520,9 +1563,6 @@ footer .copyright a {
   border-radius: 50%;
   background-clip: padding-box;
 }
-.modal.review-modal .modal-dialog {
-  width: 610px;
-}
 .modal.review-modal .modal-body p {
   font-size: 40px;
   line-height: 49px;
@@ -1542,6 +1582,10 @@ footer .copyright a {
 }
 .carousel-inner {
   overflow: visible;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .carousel-inner .item {
   -webkit-transition: left 600ms cubic-bezier(0.77, 0, 0.175, 1);
@@ -1558,6 +1602,40 @@ footer .copyright a {
 }
 .carousel-inner > .active.right {
   left: 150%;
+}
+.navbar-default .navbar-toggle {
+  margin-top: 30px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffb31a;
+}
+.navbar-default .navbar-toggle:hover .icon-bar {
+  background: #000;
+}
+@media (max-width: 1199px) {
+  .collapse.navbar-collapse {
+    width: 100%;
+  }
+  .cabinet-order-block {
+    display: block;
+    text-align: center;
+    margin: 15px 15px 0 !important;
+    float: none;
+  }
+  .cabinet-order-block li {
+    float: none;
+    text-align: center;
+  }
+  .cabinet-order-block li .cabinet-link {
+    display: inline-block;
+  }
+  .img-descr-block {
+    margin-top: 280px !important;
+  }
+  .img-descr-block h1 {
+    font-size: 90px !important;
+    line-height: 110px;
+  }
 }
 @media (max-width: 768px) {
   header {
@@ -1577,6 +1655,12 @@ footer .copyright a {
     height: 20px;
     right: 5px;
   }
+  .tabs-slider-block .container > h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 0;
+    margin-bottom: 45px;
+  }
   .tabs-slider-block .item {
     text-align: center;
   }
@@ -1586,6 +1670,37 @@ footer .copyright a {
   }
   .tabs-slider-block .item p {
     display: none;
+  }
+  .tabs-slider-block .nav-tabs {
+    margin: 0 -15px 30px;
+    display: block;
+  }
+  .tabs-slider-block .nav-tabs li {
+    -webkit-border-radius: 0 !important;
+    -webkit-background-clip: padding-box !important;
+    -moz-border-radius: 0 !important;
+    -moz-background-clip: padding !important;
+    border-radius: 0 !important;
+    background-clip: padding-box !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    margin: 0;
+  }
+  .tabs-slider-block .nav-tabs li:last-child {
+    border-bottom: 2px solid #E8E8E8 !important;
+  }
+  .tabs-slider-block .nav-tabs a {
+    -webkit-border-radius: 0 !important;
+    -webkit-background-clip: padding-box !important;
+    -moz-border-radius: 0 !important;
+    -moz-background-clip: padding !important;
+    border-radius: 0 !important;
+    background-clip: padding-box !important;
+  }
+  .tabs-slider-block .tab-pane {
+    margin-top: 30px !important;
   }
   .navbar-default .navbar-toggle {
     margin-top: 30px;
@@ -1607,7 +1722,7 @@ footer .copyright a {
   }
   .carousel-indicators,
   .iphone-block {
-    display: none;
+    display: none !important;
   }
   .mobile-app {
     text-align: center;
@@ -1621,9 +1736,6 @@ footer .copyright a {
     text-align: center;
     text-align: left;
   }
-  .tabs-slider-block h2 {
-    font-size: 40px;
-  }
   .tabs-slider-block .item {
     text-align: center;
   }
@@ -1631,6 +1743,18 @@ footer .copyright a {
     max-width: 100% !important;
     margin-bottom: 40px;
     width: 300px;
+  }
+  .tabs-slider-block .nav-tabs li {
+    width: 100%;
+    display: inline-block;
+  }
+  .tabs-slider-block a {
+    -webkit-border-radius: 22px !important;
+    -webkit-background-clip: padding-box !important;
+    -moz-border-radius: 22px !important;
+    -moz-background-clip: padding !important;
+    border-radius: 22px !important;
+    background-clip: padding-box !important;
   }
   .benefits-block {
     text-align: center;
@@ -1679,13 +1803,18 @@ footer .copyright a {
   #investors {
     padding: 0;
   }
+  #investors .investors__cars {
+    margin: 0 20px;
+  }
+  #investors .equally {
+    margin-top: 50px !important;
+  }
   .navbar-header {
     padding-bottom: 20px;
   }
   header .collapse.navbar-collapse {
     float: none;
     margin-top: 0;
-    padding-top: 15px;
   }
   header section.img-descr-block {
     margin-top: 300px;
@@ -1705,6 +1834,35 @@ footer .copyright a {
   .about-us .nav-tabs .active a {
     padding: 12px 15px !important;
   }
+  #team .m-block {
+    margin-bottom: 35px;
+  }
+  #team .m-block h2 {
+    font-size: 24px;
+  }
+  #team .m-block img {
+    margin-bottom: 0;
+  }
+  #press {
+    padding: 0;
+  }
+  #press .press__icons-block {
+    margin-bottom: 30px;
+  }
+  #press .press__icons-block a {
+    display: inline-block;
+    width: 100%;
+    margin: 15px 0;
+  }
+  #press .press__list {
+    margin-top: 35px;
+  }
+  #press .press__list li {
+    margin-bottom: 10px;
+  }
+  .reviews .item {
+    padding: 0 40px;
+  }
   .reviews .item img {
     margin: 15px auto;
     float: none;
@@ -1712,5 +1870,59 @@ footer .copyright a {
   }
   .reviews .item article {
     width: 100%;
+  }
+  .modal-content {
+    padding: 0 20px !important;
+  }
+  .modal-content ul {
+    margin-left: 55px !important;
+  }
+  .close {
+    left: 10px !important;
+    top: -35px !important;
+    z-index: 99999;
+    color: #fff;
+    margin: 0 !important;
+  }
+  #investors .investors__calc .text-left {
+    text-align: center;
+  }
+  .mobile-app .subcribe-block {
+    padding-top: 30px;
+  }
+  .plans h2.title {
+    text-align: center;
+  }
+  .plans h2.title .btn {
+    position: static;
+    margin-top: 25px;
+    display: inline-block;
+    float: none;
+  }
+  .tel-block {
+    text-align: center;
+    padding-bottom: 25px !important;
+    left: 0 !important;
+  }
+  .tel-block p {
+    float: left;
+    display: block;
+    width: 100%;
+  }
+  .tel-block:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .tel-block h2 {
+    float: none !important;
+    margin-right: -50px;
+  }
+  .menu-copyright-block {
+    margin-top: 30px;
+  }
+  .social-block {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 }

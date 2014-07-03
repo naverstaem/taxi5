@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     function headerScroll() {
 
-        if ($(window).width() > 768) {
+        if ($(window).width() > 1199) {
 
             if ((window.pageYOffset || document.documentElement.scrollTop) > 15) {
                 $('header >.navbar').addClass('fixed');
@@ -33,6 +33,17 @@ $(document).ready(function(){
         return false;
     });
 
+
+    function tabsHeightChange() {
+        $(this).parents('.tabs-slider-block').css('height', $(this).height());
+    }
+
+    $('.tabs-slider-block .nav-tabs a').click(function(){
+        tabsHeightChange();
+    });
+
+
+
     var maxHeight = -1;
     $('#benefits .carousel-inner .item').each(function() {
         if ($(this).height() > maxHeight){
@@ -44,6 +55,17 @@ $(document).ready(function(){
         $(this).height(maxHeight);
     });
 
+    $('#for-company .carousel-inner .item').each(function() {
+        if ($(this).height() > maxHeight){
+            maxHeight = $(this).height();
+        }
+    });
+
+    $('#for-company .carousel-inner .item').each(function() {
+        $(this).height(maxHeight);
+    });
+
+
     $('.investors__reload').on('click', function(){
         event.preventDefault();
 
@@ -53,6 +75,15 @@ $(document).ready(function(){
             el.removeClass('rotateIn');
         }, 1000);
 
+    });
+
+    $('.tabs-slider-block.benefits').on('load', function(){
+        var elementLink = $(this).find('.tab-pane.active');
+        var elementH = $(elementLink).height();
+
+        $("#benefits").css("height", elementH+300);
+
+        console.log(elementH);
     });
 
     $('button.navbar-toggle').click(function(){

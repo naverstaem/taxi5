@@ -194,3 +194,12 @@
     font-style: normal;
 
 }
+
+@font-face{ 
+      font-family: 'websymbolsligaregular';
+          src: url('websymbolsligaregular.eot');
+          src: url('websymbolsligaregular.eot?#iefix') format('embedded-opentype'),
+               url('websymbolsligaregular.woff') format('woff'),
+               url('websymbolsligaregular.ttf') format('truetype'),
+               url('websymbolsligaregular.svg#websymbolsligaregular') format('svg');
+}
