@@ -29,6 +29,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/css\/bootstrap.min.old.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/bootstrap.min.old.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/font-awesome.min.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -127,6 +136,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/icons\/apps\/apple.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1061,
+		"inputAbbreviatedPath": "\/img\/icons\/apps\/apple.png",
+		"outputAbbreviatedPath": "\/img\/icons\/apps\/apple.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/apps\/google.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 938,
+		"inputAbbreviatedPath": "\/img\/icons\/apps\/google.png",
+		"outputAbbreviatedPath": "\/img\/icons\/apps\/google.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/apps\/windows.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1163,
+		"inputAbbreviatedPath": "\/img\/icons\/apps\/windows.png",
+		"outputAbbreviatedPath": "\/img\/icons\/apps\/windows.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/check-green.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 698,
+		"inputAbbreviatedPath": "\/img\/icons\/check-green.png",
+		"outputAbbreviatedPath": "\/img\/icons\/check-green.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/iphonerotatedlight.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -138,6 +191,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/img\/map.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.18824e+06,
+		"inputAbbreviatedPath": "\/img\/map.jpg",
+		"outputAbbreviatedPath": "\/img\/map.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/mobile-app.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -148,6 +212,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
+		},
+	"\/img\/order-form\/on-the-way-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1628,
+		"inputAbbreviatedPath": "\/img\/order-form\/on-the-way-icon.png",
+		"outputAbbreviatedPath": "\/img\/order-form\/on-the-way-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/order-form\/price-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1335,
+		"inputAbbreviatedPath": "\/img\/order-form\/price-icon.png",
+		"outputAbbreviatedPath": "\/img\/order-form\/price-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/img\/our-team\/i1.jpg": {
 		"fileType": 16384,

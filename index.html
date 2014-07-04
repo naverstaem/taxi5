@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <title>Такси</title>
 
     <!-- Style files -->
@@ -31,7 +31,7 @@
                             <img src="img/svg/logo_blk.svg" alt="" class="black" />
                         </a>
 
-                        <ul class="nav navbar-nav navbar-left lang hidden-xs">
+                        <ul class="nav navbar-nav navbar-left lang">
                             <li><a href="" class="active">Рус</a></li>
                             <li><a href="">En</a></li>
                         </ul>
@@ -1139,7 +1139,7 @@
     <div class="modal fade order-modal" id="order-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
     <div class="maps-block">
-        <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=OIuxIcm87A1nQ8MWhsVOfOnCShAR0tT7&width=100%&height=100%"></script>
+        <img src="img/map.jpg" class="map">
     </div>
 
       <div class="modal-dialog">
@@ -1151,26 +1151,34 @@
           <div class="modal-body">
             <div id="step1">
                 <div class="form-block">
-                    <form action="">
+                    <form action="" method="">
+
                         <label>
                             <p>Откуда</p>
                             <input type="text" name="" placeholder="">
                         </label>
+
                         <label>
                             <p>Куда <span>нужно для предварительного рассчета</span></p>
                             <input type="text" name="" placeholder="Адрес или название места">
                         </label>
+
                         <label>
                             <p>Когда</p>
                             <input type="text" name="" placeholder="Адрес или название места">
                         </label>
+
+                        <label>
+                            <p>Телефон</p>
+                            <p>+375 29 767-37-00</p>
+                        </label>
+
                         <label>
                             <p>Телефон</p>
                             <input type="text" name="" placeholder="+375 29 767-37-00">
                         </label>
 
                         <button>Я Хочу Заказать такси</button>
-
                     </form>
                 </div>
             </div>

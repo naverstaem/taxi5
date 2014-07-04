@@ -1774,40 +1774,48 @@ footer {
   }
 }
 
-@media ( max-width: 1199px ) {
+// @media ( max-width: 1199px ) {
 
-  .collapse.navbar-collapse {
-    width: 100%;
-  }
+//   .collapse.navbar-collapse {
+//     width: 100%;
+//   }
 
-  .cabinet-order-block{
-    display: block;
-    text-align: center;
-    margin: 15px 15px 0 !important;
-    float: none;
+//   .cabinet-order-block{
+//     display: block;
+//     text-align: center;
+//     margin: 15px 15px 0 !important;
+//     float: none;
 
-    li {
-      float: none;
-      text-align: center;
+//     li {
+//       float: none;
+//       text-align: center;
 
-      .cabinet-link {
-        display: inline-block;
-      }
-    }
-  }
+//       .cabinet-link {
+//         display: inline-block;
+//       }
+//     }
+//   }
 
-  .img-descr-block{
-    margin-top: 280px !important;
+//   .img-descr-block{
+//     margin-top: 280px !important;
 
-    h1 {
-      font-size: 90px !important;
-      line-height: 110px;
-    }
+//     h1 {
+//       font-size: 90px !important;
+//       line-height: 110px;
+//     }
+//   }
+// }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)  {
+  body {
+    position: absolute;
   }
 }
 
 
-@media ( max-width: 768px ) {
+@media ( max-width: 640px ) {
 
   header {
     background-attachment: scroll;
@@ -1815,6 +1823,10 @@ footer {
 
     .logo {
       margin-left: 20px !important;
+    }
+
+    .lang {
+      display: none;
     }
 
     section.img-descr-block{
@@ -2189,6 +2201,11 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
   }
 }
 //  Order modal styles end
