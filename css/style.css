@@ -103,6 +103,7 @@ header .navbar.scroll .lang {
   -webkit-opacity: 0.3;
   -moz-opacity: 0.3;
   opacity: 0.3;
+  min-width: 85px;
 }
 header .navbar.scroll .lang a {
   color: #000;
@@ -495,6 +496,7 @@ header .benefits-block .i6 .icon-block {
 }
 .tabs-slider-block .item img {
   width: 100%;
+  max-height: 300px;
 }
 .tabs-slider-block .carousel-indicators {
   position: relative;
@@ -1086,6 +1088,10 @@ footer .left-block a {
   margin-top: 19px;
   display: inline-block;
   position: relative;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 footer .left-block a:after {
   content: '';
@@ -1098,6 +1104,12 @@ footer .left-block a:after {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+}
+footer .left-block a:hover {
+  color: #4d4d4d;
+}
+footer .left-block a:hover:after {
+  border-bottom: 1px #e5e5e5 solid;
 }
 footer .menu-copyright-block ul {
   padding: 0;
@@ -1113,6 +1125,10 @@ footer .menu-copyright-block ul a {
   display: inline-block;
   text-decoration: none;
   position: relative;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 footer .menu-copyright-block ul a:after {
   content: '';
@@ -1126,6 +1142,12 @@ footer .menu-copyright-block ul a:after {
   -o-transition: all 0.4s;
   transition: all 0.4s;
 }
+footer .menu-copyright-block ul a:hover {
+  color: #4d4d4d;
+}
+footer .menu-copyright-block ul a:hover:after {
+  border-bottom: 1px #e5e5e5 solid;
+}
 footer .copyright {
   text-align: right;
   font-family: 'proxima_nova_rgregular';
@@ -1138,6 +1160,10 @@ footer .copyright a {
   color: #999999;
   display: inline-block;
   position: relative;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
 }
 footer .copyright a:after {
   content: '';
@@ -1150,6 +1176,12 @@ footer .copyright a:after {
   -moz-transition: all 0.4s;
   -o-transition: all 0.4s;
   transition: all 0.4s;
+}
+footer .copyright a:hover {
+  color: #4d4d4d;
+}
+footer .copyright a:hover:after {
+  border-bottom: 1px #e5e5e5 solid;
 }
 #investors {
   margin-top: -50px;
@@ -1663,6 +1695,8 @@ footer .copyright a:after {
   }
   .tabs-slider-block .item {
     text-align: center;
+    padding: 0 30px;
+    min-width: 250px !important;
   }
   .tabs-slider-block .item h2 {
     font-size: 30px;
@@ -1670,6 +1704,10 @@ footer .copyright a:after {
   }
   .tabs-slider-block .item p {
     display: none;
+  }
+  .tabs-slider-block .item img {
+    max-width: 200px !important;
+    margin-bottom: 40px;
   }
   .tabs-slider-block .nav-tabs {
     margin: 0 -15px 30px;
@@ -1701,6 +1739,18 @@ footer .copyright a:after {
   }
   .tabs-slider-block .tab-pane {
     margin-top: 30px !important;
+  }
+  .tabs-slider-block .nav-tabs li {
+    width: 100%;
+    display: inline-block;
+  }
+  .tabs-slider-block a {
+    -webkit-border-radius: 22px !important;
+    -webkit-background-clip: padding-box !important;
+    -moz-border-radius: 22px !important;
+    -moz-background-clip: padding !important;
+    border-radius: 22px !important;
+    background-clip: padding-box !important;
   }
   .navbar-default .navbar-toggle {
     margin-top: 30px;
@@ -1735,26 +1785,6 @@ footer .copyright a:after {
     display: inline-block;
     text-align: center;
     text-align: left;
-  }
-  .tabs-slider-block .item {
-    text-align: center;
-  }
-  .tabs-slider-block .item img {
-    max-width: 100% !important;
-    margin-bottom: 40px;
-    width: 300px;
-  }
-  .tabs-slider-block .nav-tabs li {
-    width: 100%;
-    display: inline-block;
-  }
-  .tabs-slider-block a {
-    -webkit-border-radius: 22px !important;
-    -webkit-background-clip: padding-box !important;
-    -moz-border-radius: 22px !important;
-    -moz-background-clip: padding !important;
-    border-radius: 22px !important;
-    background-clip: padding-box !important;
   }
   .benefits-block {
     text-align: center;
@@ -1925,4 +1955,11 @@ footer .copyright a:after {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
+}
+.order-modal .maps-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

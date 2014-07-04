@@ -62,7 +62,7 @@
 
                     <ul class="nav navbar-nav navbar-right cabinet-order-block">
                             <li><a href="" class="cabinet-link"><i class="icon"></i>Вход</a></li>
-                            <li><a href="" class="order-link" data-toggle="modal" data-target="#textmodal" >ЗАКАЗАТЬ</a></li>
+                            <li><a href="" class="order-link" data-toggle="modal" data-target="#order-form" >ЗАКАЗАТЬ</a></li>
                         </ul>
 
                         <div class="bg"></div>
@@ -1127,6 +1127,60 @@
 
             <div class="social-block">
                 <img src="img/twitter-img.png" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Окно заказа -->
+
+    <div class="modal fade order-modal" id="order-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+    <div class="maps-block">
+        <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=OIuxIcm87A1nQ8MWhsVOfOnCShAR0tT7&width=100%&height=100%"></script>
+    </div>
+
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">&#206;</span><span class="sr-only"></span></button>
+            <h2 class="modal-title" id="myModalLabel">Заказать такси</h2>
+          </div>
+          <div class="modal-body">
+            <div id="step1">
+                <div class="form-block">
+                    <form action="">
+                        <label>
+                            <p>Откуда</p>
+                            <input type="text" name="" placeholder="">
+                        </label>
+                        <label>
+                            <p>Куда <span>нужно для предварительного рассчета</span></p>
+                            <input type="text" name="" placeholder="Адрес или название места">
+                        </label>
+                        <label>
+                            <p>Когда</p>
+                            <input type="text" name="" placeholder="Адрес или название места">
+                        </label>
+                        <label>
+                            <p>Телефон</p>
+                            <input type="text" name="" placeholder="+375 29 767-37-00">
+                        </label>
+
+                        <button>Я Хочу Заказать такси</button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="apps-block">
+                <div class="apps-block__list">
+                    <a href=""><img src="img/" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                    <a href=""><img src="" alt=""></a>
+                </div>
             </div>
 
           </div>

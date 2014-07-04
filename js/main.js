@@ -44,26 +44,32 @@ $(document).ready(function(){
 
 
 
-    var maxHeight = -1;
-    $('#benefits .carousel-inner .item').each(function() {
-        if ($(this).height() > maxHeight){
-            maxHeight = $(this).height();
-        }
-    });
+    function SliderHeight (){
+        var maxHeight = -1;
+        $('#benefits .carousel-inner .item').each(function() {
+            if ($(this).height() > maxHeight){
+                maxHeight = $(this).height();
+            }
+        });
 
-    $('#benefits .carousel-inner .item').each(function() {
-        $(this).height(maxHeight);
-    });
+        $('#benefits .carousel-inner .item').each(function() {
+            $(this).height(maxHeight);
+        });
 
-    $('#for-company .carousel-inner .item').each(function() {
-        if ($(this).height() > maxHeight){
-            maxHeight = $(this).height();
-        }
-    });
+        $('#for-company .carousel-inner .item').each(function() {
+            if ($(this).height() > maxHeight){
+                maxHeight = $(this).height();
+            }
+        });
 
-    $('#for-company .carousel-inner .item').each(function() {
-        $(this).height(maxHeight);
-    });
+        $('#for-company .carousel-inner .item').each(function() {
+            $(this).height(maxHeight);
+        });
+    }
+
+    SliderHeight();
+
+    $(document).on('resize', SliderHeight);
 
 
     $('.investors__reload').on('click', function(){
