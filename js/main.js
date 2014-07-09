@@ -44,7 +44,7 @@ $(document).ready(function(){
 
 
 
-    function SliderHeight (){
+    function sliderHeight() {
         var maxHeight = -1;
         $('#benefits .carousel-inner .item').each(function() {
             if ($(this).height() > maxHeight){
@@ -67,9 +67,9 @@ $(document).ready(function(){
         });
     }
 
-    SliderHeight();
+    sliderHeight();
 
-    $(document).on('resize', SliderHeight);
+    $(document).on('resize', sliderHeight);
 
 
     $('.investors__reload').on('click', function(){
@@ -89,11 +89,45 @@ $(document).ready(function(){
 
         $("#benefits").css("height", elementH+300);
 
-        console.log(elementH);
     });
 
     $('button.navbar-toggle').click(function(){
         $('header >.navbar').toggleClass('scroll');
+    });
+
+    $(".checkbox input[type=checkbox]").click(function(){
+        $(this).siblings('i').toggleClass('active');
+    });
+
+
+    function radioBtnChange() {
+        $(".other-parametrs.when input[type=radio]:not(:checked)").parent('label').removeClass('active');
+        $(".other-parametrs.when input[type=radio]:checked").parent('label').addClass('active');
+
+        $(".other-parametrs input[type=radio]:checked").each(function(){
+            var valChecked = $(this).val();
+
+            if (valChecked === '1') {
+                $(this).parent().siblings('label').not('.active').find('.time-block').toggleClass('hidden');
+            } else {
+                $('.time-block').removeClass('hidden');
+            }
+        });
+
+    } radioBtnChange();
+
+    $(".other-parametrs.when").change(function(){
+        radioBtnChange();
+    });
+
+    $('#step1 form >label>input[type=text]').click(function(){
+        $(".other-parametrs.visible").removeClass('visible');
+        $(this).siblings('.other-parametrs').addClass('visible');
+
+        $(this).siblings('.other-parametrs').find('.back').click(function(){
+            event.preventDefault();
+            $(this).parents('.other-parametrs').removeClass('visible');
+        });
     });
 
 });
