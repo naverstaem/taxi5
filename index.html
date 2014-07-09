@@ -1139,41 +1139,233 @@
     <div class="modal fade order-modal" id="order-form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
     <div class="maps-block">
+        <div class="maps-block__parametrs hidden-xs">
+            <div class="on-the-way">
+                <p>В пути <img src="img/order-form/on-the-way-icon.png" alt=""></p>
+
+                <div class="parametrs">
+                    <p>30<span>мин</span></p>
+                    <p>14<span>км</span></p>
+                </div>
+            </div>
+            <div class="price-block">
+                <p>Прим. <br>
+                    цена <img src="img/order-form/price-icon.png" alt="">
+                </p>
+
+                <div class="parametrs">
+                    <p>85 000<span>руб.</span></p>
+                </div>
+            </div>
+        </div>
+
         <img src="img/map.jpg" class="map">
     </div>
 
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">&#206;</span><span class="sr-only"></span></button>
-            <h2 class="modal-title" id="myModalLabel">Заказать такси</h2>
-          </div>
-          <div class="modal-body">
-            <div id="step1">
+        <div id="step1" class="">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">&#206;</span><span class="sr-only"></span></button>
+                <h2 class="modal-title" id="myModalLabel">Заказать такси</h2>
+              </div>
+              <div class="modal-body">
+
                 <div class="form-block">
                     <form action="" method="">
+
+                        <div class="checkbox">
+
+                            <label class="pets">
+                                <i></i>
+                                <input type="checkbox" name="" id="">
+
+                                <span class="hint">
+                                    Перевозка животных
+                                </span>
+                            </label>
+
+                            <label class="man">
+                                <i></i>
+                                <input type="checkbox" name="" id="">
+
+                                <span class="hint">
+                                    Сопровождение до двери
+                                </span>
+                            </label>
+
+                            <label class="child">
+                                <i></i>
+                                <input type="checkbox" name="" id="">
+
+                                <span class="hint">
+                                    Детское кресло
+                                </span>
+                            </label>
+
+                        </div>
 
                         <label>
                             <p>Откуда</p>
                             <input type="text" name="" placeholder="">
+
+                             <span class="other-parametrs">
+
+                                <span class="r i1">
+                                    <label>
+                                        <p>Дом</p>
+                                        <input type="text" name="">
+                                    </label>
+                                    <label>
+                                        <p>Корпус</p>
+                                        <input type="text" name="">
+                                    </label>
+                                    <label>
+                                        <p>Квартира</p>
+                                        <input type="text" name="">
+                                    </label>
+                                </span>
+
+                                <label class="comment">
+                                    <p>Комментарий</p>
+                                    <input type="text" name="" placeholder="Например, подъезд">
+                                </label>
+
+                                <span class="buttons">
+                                    <a href="" class="back">← <span>Назад</span></a>
+                                    <a href="" class="ready"><span>Готово</span></a>
+
+                                    <br class="cb">
+                                </span>
+
+                            </span>
                         </label>
 
                         <label>
                             <p>Куда <span>нужно для предварительного рассчета</span></p>
                             <input type="text" name="" placeholder="Адрес или название места">
+
+
+                            <span class="other-parametrs">
+
+                                <span class="r i1">
+                                    <label>
+                                        <p>Дом</p>
+                                        <input type="text" name="">
+                                    </label>
+                                    <label>
+                                        <p>Корпус</p>
+                                        <input type="text" name="">
+                                    </label>
+                                    <label>
+                                        <p>Квартира</p>
+                                        <input type="text" name="">
+                                    </label>
+                                </span>
+
+                                <label class="comment">
+                                    <p>Комментарий</p>
+                                    <input type="text" name="" placeholder="Например, подъезд">
+                                </label>
+
+                                <span class="buttons">
+                                    <a href="" class="back">← <span>Назад</span></a>
+                                    <a href="" class="ready"><span>Готово</span></a>
+
+                                    <br class="cb">
+                                </span>
+
+                            </span>
+
                         </label>
 
                         <label>
                             <p>Когда</p>
                             <input type="text" name="" placeholder="Адрес или название места">
+
+                            <span class="other-parametrs when">
+                                <label>
+                                    <span>Прямо сейчас</span>
+                                    <i class="symbol">&#245;</i>
+                                    <input type="radio" name="time" value="1" checked>
+                                </label>
+
+                                <label>
+                                    <span>К определенному времени</span>
+                                    <i class="symbol">&#245;</i>
+                                    <input type="radio" name="time" value="2" >
+
+                                                                    <span class="time-block ">
+
+                                    <span class="days-select">
+                                        <select name="days" id="">
+                                            <option value="">Послезавтра</option>
+                                            <option value="">Завтра</option>
+                                        </select>
+                                        <i class="symbol">&#203;</i>
+                                    </span>
+
+                                    <span class="data-selects">
+
+                                        <label>
+                                            <select name="days" id="">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                            <i class="symbol">&#203;</i>
+                                        </label>
+
+                                        <label>
+                                            <select class="month" id="">
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                            <i class="symbol">&#203;</i>
+                                        </label>
+
+                                    </span>
+
+                                </span>
+                                </label>
+
+
+
+                                <span class="buttons">
+                                    <a href="" class="back"><span>Отмена</span></a>
+                                    <a href="" class="ready"><span>Готово</span></a>
+
+                                    <br class="cb">
+                                </span>
+
+                            </span>
                         </label>
 
-                        <label>
+                        <label class="auth hidden">
                             <p>Телефон</p>
-                            <p>+375 29 767-37-00</p>
+                            <a href="">+375 29 767-37-00</a>
                         </label>
 
-                        <label>
+                        <label class="n-auth">
                             <p>Телефон</p>
                             <input type="text" name="" placeholder="+375 29 767-37-00">
                         </label>
@@ -1183,15 +1375,157 @@
                 </div>
             </div>
 
+          </div>
+
+          <div id="step2" class="hidden">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">Î</span><span class="sr-only"></span></button>
+                <h2 class="modal-title" id="myModalLabel">Подтверждение  <br>
+                        телефона</h2>
+              </div>
+
+              <div class="modal-body">
+                  <div class="tel-block">
+                      <h2>+375 29 <span>767-37-00</span></h2>
+                      <p>Вы используете этот номер для заказа <br>впервые. Для подтверждения номера <br>мы отправили вам секретное СМС</p>
+                  </div>
+
+                  <hr>
+
+                  <div class="sms-block">
+
+                        <form action="" method="">
+
+                            <div class="row">
+                                <p>Код <br>
+                                из СМС</p>
+                                <input type="text" name="">
+                                <a href="">Код <br>
+                                не пришел</a>
+                            </div>
+
+                            <button>Подтвердить телефон</button>
+                        </form>
+
+                  </div>
+              </div>
+          </div>
+
+          <div id="step3" class="hidden">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">Î</span><span class="sr-only"></span></button>
+                <h2 class="modal-title" id="myModalLabel">Ищем машину  <br>
+поблизости</h2>
+              </div>
+
+              <div class="modal-body">
+                  <div class="loading">
+                      <p>87</p>
+                      <img src="img/loading-process.png" alt="">
+                  </div>
+
+                  <div class="adress">
+                      <p>пр-т Независимости, 123/2, кв.12</p>
+                      <span>Жду около второго подъезда</span>
+                  </div>
+                  <a class="btn">Отмена заказа</a>
+              </div>
+          </div>
+
+
+          <div id="step4" class="hidden">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">Î</span><span class="sr-only"></span></button>
+                <h2 class="modal-title" id="myModalLabel">Ура, Мы нашли <br>
+                        машину!</h2>
+              </div>
+
+              <div class="modal-body">
+                  <div class="table row">
+                    <img src="img/passat-min.png" alt="" class="car">
+                      <div class="col-xs-6 first">
+                          <p>Автомобиль</p>
+                          <p>Номер</p>
+                          <p>Водитель</p>
+                          <p>Время ожидания</p>
+                      </div>
+
+                      <div class="col-xs-6">
+                          <p>Черный VW Passat</p>
+                          <p>3507 IO-7</p>
+                          <p>Валентин</p>
+                          <p>Примерно, 11 мин</p>
+                      </div>
+                  </div>
+
+                  <div class="adress">
+                      <p>пр-т Независимости, 123/2, кв.12</p>
+                      <span>Жду около второго подъезда</span>
+                  </div>
+
+                  <div class="buttons clearfix">
+                        <div class="pull-left">
+                            <a href="" class="cancel">Отмена</a>
+                            <p>через 30 сек</p>
+                        </div>
+
+                        <div class="pull-right">
+                            <a href="" class="i-will-go">я поеду!</a>
+                        </div>
+                  </div>
+              </div>
+          </div>
+
+
+          <div id="step4" class="hidden">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">Î</span><span class="sr-only"></span></button>
+                <h2 class="modal-title" id="myModalLabel">Водитель <br>
+                уже в пути</h2>
+              </div>
+
+              <div class="modal-body">
+                  <div class="table row">
+                    <img src="img/passat-min.png" alt="" class="car">
+                      <div class="col-xs-6 first">
+                          <p>Автомобиль</p>
+                          <p>Номер</p>
+                          <p>Водитель</p>
+                          <p>Время ожидания</p>
+                      </div>
+
+                      <div class="col-xs-6">
+                          <p>Черный VW Passat</p>
+                          <p>3507 IO-7</p>
+                          <p>Валентин</p>
+                          <p>Примерно, 11 мин</p>
+                      </div>
+                  </div>
+
+                  <div class="adress">
+                      <p>пр-т Независимости, 123/2, кв.12</p>
+                      <span>Жду около второго подъезда</span>
+                  </div>
+
+                  <div class="buttons clearfix">
+                        <a href="" class="btn">Нужна еще одна машина</a>
+                  </div>
+              </div>
+          </div>
+
+
             <div class="apps-block">
                 <div class="apps-block__list">
-                    <a href=""><img src="img/" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
-                    <a href=""><img src="" alt=""></a>
+                    <a href="" class="apple"><img src="img/icons/apps/apple.png" alt=""></a>
+                    <a href="" class="google"><img src="img/icons/apps/google.png" alt=""></a>
+                    <a href="" class="windows"><img src="img/icons/apps/windows.png" alt=""></a>
+
+                    <p>Скачайте приложение для Айфона, <br>
+                        Андроида или Windows Phone</p>
                 </div>
             </div>
 
-          </div>
+
         </div>
       </div>
     </div>
