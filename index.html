@@ -61,9 +61,11 @@
                     </div>
 
                     <ul class="nav navbar-nav navbar-right cabinet-order-block">
-                        <li><a href="" class="cabinet-link"><i class="icon"></i>Вход</a></li>
-                        <li><a href="" class="order-link" data-toggle="modal" data-target="#order-form" >ЗАКАЗАТЬ</a></li>
-                    </ul>
+                            <li><a href="" class="cabinet-link"><i class="icon"></i>Вход</a></li>
+                            <li><a href="" class="order-link" data-toggle="modal" data-target="#order-form" >ЗАКАЗАТЬ</a></li>
+                        </ul>
+
+                        <div class="bg"></div>
                 </div>
             </div>
 
@@ -746,7 +748,7 @@
                     <p class="price">300 000 <span>руб</span></p>
                 </div>
             </div>
-
+            
             <hr/>
 
             <div class="row r2">
@@ -769,14 +771,14 @@
             <p>Позвоните, чтобы заказать <br/>
                 один из спецтарифов</p>
 
-            <h2><i class="tel"></i>75 00</h2>
+            <h2><i class="tel"></i>75-00</h2>
         </div>
     </div>
 </section>
 
 <section class="reviews" id="reviews">
     <div class="container">
-        <h2>Отзывы <a data-toggle="modal" data-target="#tnx-reviews" class="btn">Добавить отзыв</a></h2>
+        <h2>Отзывы</h2>
 
         <div id="reviews-carousel" class="carousel slide" data-ride="carousel" data-interval="0">
 
@@ -885,7 +887,7 @@
 
                 <div class="row col-md-11">
                     <div class="col-md-5">
-                        <h3>Наше миссия в том, чтобы сделать
+                        <h3>Наше миссия в том, чтобы сделать 
     первое в Беларуси такси с человеческим лицом <strong>– такси для людей.</strong></h3>
                     </div>
 
@@ -1032,7 +1034,7 @@
                                 <span>Вчера, TUT.by</span>
                                 <a href="">Вайфай, костюмы и новые авто – новая служба такси в Минске</a>
                             </li>
-                            <li><span>19 мая, Citydog.by</span><a href="">Такси для людей начинает работу
+                            <li><span>19 мая, Citydog.by</span><a href="">Такси для людей начинает работу 
                                 в Минске</a></li>
                             <li><span>10 мая, Onliner.by</span>
                             <a href="">Новый взгляд на такси. Пятница – новое такси в Минске.</a></li>
@@ -1050,26 +1052,8 @@
     <footer>
         <div class="container">
             <div class="col-md-5 left-block">
-
-                <div class="col-md-7">
-                    <p>© 2014 ООО «Такси Пятница»</p>
-                    <a href="">Оставить жалобу</a>
-                </div>
-
-                <div class="col-md-5 social_rev_b">
-                    <a href="" class="add-rev"><i></i>Оставить отзыв</a>
-
-                    <div class="b-social">
-                        <ul>
-                            <li><a href=""><img src="img/social/fb.png"></a></li>
-                            <li><a href=""><img src="img/social/vk.png"></a></li>
-                            <li><a href=""><img src="img/social/tw.png"></a></li>
-                            <li><a href=""><img src="img/social/inst.png"></a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
+                <p>© 2014 ООО «Такси Пятница»</p>
+                <a href="">Оставить жалобу</a>
             </div>
 
             <div class="col-md-7 menu-copyright-block container">
@@ -1086,7 +1070,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3 copyright">
-                    <p>Дизайн – <a href="http://iskragency.com">ISKRA</a></p>
+                    <p>Дизайн – <a href="">ISKRA</a></p>
                 </div>
             </div>
         </div>
@@ -1113,7 +1097,7 @@
             <ul>
                 <li><span>1</span> Генетика транспонирует гений, </li>
                 <li><span>2</span> В официозе принято обратное</li>
-                <li><span>3</span> Гений заполняет субъективный структурализм
+                <li><span>3</span> Гений заполняет субъективный структурализм 
 и парадокс дедукции</li>
                 <li><span>4</span> Отрицает очевидное.</li>
             </ul>
@@ -1183,7 +1167,7 @@
         <div id="step1" class="">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">&#206;</span><span class="sr-only"></span></button>
-                <h2 class="modal-title">Заказать такси</h2>
+                <h2 class="modal-title" id="myModalLabel">Заказать такси</h2>
               </div>
               <div class="modal-body">
 
@@ -1194,7 +1178,7 @@
 
                             <label class="pets">
                                 <i></i>
-                                <input type="checkbox" name="">
+                                <input type="checkbox" name="" id="">
 
                                 <span class="hint">
                                     Перевозка животных
@@ -1203,7 +1187,7 @@
 
                             <label class="man">
                                 <i></i>
-                                <input type="checkbox" name="">
+                                <input type="checkbox" name="" id="">
 
                                 <span class="hint">
                                     Сопровождение до двери
@@ -1212,7 +1196,7 @@
 
                             <label class="child">
                                 <i></i>
-                                <input type="checkbox" name="">
+                                <input type="checkbox" name="" id="">
 
                                 <span class="hint">
                                     Детское кресло
@@ -1221,108 +1205,11 @@
 
                         </div>
 
-                        <div class="label-block">
-                                <label for="whence">
-                                    <p>Откуда</p>
-                                </label>
+                        <label>
+                            <p>Откуда</p>
+                            <input type="text" name="" placeholder="">
 
-                                <input type="text" name="" placeholder="Адрес или название места" id="whence">
-
-                                 <span class="other-parametrs search">
-
-                                    <span class="r i1">
-                                        <label>
-                                            <p>Дом</p>
-                                            <input type="text" name="">
-                                        </label>
-                                        <label>
-                                            <p>Корпус</p>
-                                            <input type="text" name="">
-                                        </label>
-                                        <label>
-                                            <p>Квартира</p>
-                                            <input type="text" name="">
-                                        </label>
-                                    </span>
-
-                                    <label class="comment">
-                                        <p>Комментарий</p>
-                                        <input type="text" name="" placeholder="Например, подъезд">
-                                    </label>
-
-                                    <span class="buttons">
-                                        <a href="" class="back"><span>Отмена</span></a>
-                                        <a href="" class="ready"><span>Готово</span></a>
-
-                                        <br class="cb">
-                                    </span>
-
-                                </span>
-
-
-                                <div class="other-parametrs whence-auth">
-                                    <ul>
-                                        <li class="my-position">
-                                            <a href=""><img src="img/adress-icon.png" alt=""/>
-                                                Определить мой адрес</a>
-                                        </li>
-                                        <li>
-                                            <a href="">ул. Минина, 24/2, кв. 12</a></li>
-                                        <li class="airport">
-                                            <a href="">Аэропорт Минск-2 <span>к главному в...</span> <img src="img/air-icon.png"
-                                                                                                                      alt=""/></a> </li>
-                                        <li>
-                                            <a href="">пр-т Независимости 123/2, кв. 144</a></li>
-                                        <li>
-                                            <a href="">ул. Есенина 12 <span>Второй подъезд</span></a> </li>
-                                        <li class="train">
-                                            <a href="">Минский Ж/Д вокзал <img src="img/train-icon.png" alt=""/></a> 
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                 <span class="other-parametrs with-table">
-
-                                    <span class="r i1">
-
-                                        <label class="num">
-                                            <p>Поезд №</p>
-                                            <input type="text" name="">
-                                        </label>
-
-                                        <label class="with-table-lb">
-                                            <p>Встретить меня <br/>
-                                                с табличкой</p>
-
-                                            <input type="checkbox" name="with-table" />
-                                            <i></i>
-                                        </label>
-                                    </span>
-
-                                    <label class="comment hidden">
-                                        <input type="text" name="" placeholder="Текст на табличке">
-                                    </label>
-
-                                    <span class="buttons">
-                                        <a href="" class="back"><span>Отмена</span></a>
-                                        <a href="" class="ready"><span>Готово</span></a>
-
-                                        <br class="cb">
-                                    </span>
-
-                                </span>
-
-                        </div>
-
-                        <div class="label-block">
-
-                            <label for="where" class="where">
-                                <p>Куда <small>нужно для предварительного рассчета</small></p>
-                            </label>
-
-                            <input type="text" name="" placeholder="Адрес или название места" id="where">
-
-                            <span class="other-parametrs search">
+                             <span class="other-parametrs">
 
                                 <span class="r i1">
                                     <label>
@@ -1345,7 +1232,44 @@
                                 </label>
 
                                 <span class="buttons">
-                                    <a href="" class="back"><span>Отмена</span></a>
+                                    <a href="" class="back">← <span>Назад</span></a>
+                                    <a href="" class="ready"><span>Готово</span></a>
+
+                                    <br class="cb">
+                                </span>
+
+                            </span>
+                        </label>
+
+                        <label>
+                            <p>Куда <span>нужно для предварительного рассчета</span></p>
+                            <input type="text" name="" placeholder="Адрес или название места">
+
+
+                            <span class="other-parametrs">
+
+                                <span class="r i1">
+                                    <label>
+                                        <p>Дом</p>
+                                        <input type="text" name="">
+                                    </label>
+                                    <label>
+                                        <p>Корпус</p>
+                                        <input type="text" name="">
+                                    </label>
+                                    <label>
+                                        <p>Квартира</p>
+                                        <input type="text" name="">
+                                    </label>
+                                </span>
+
+                                <label class="comment">
+                                    <p>Комментарий</p>
+                                    <input type="text" name="" placeholder="Например, подъезд">
+                                </label>
+
+                                <span class="buttons">
+                                    <a href="" class="back">← <span>Назад</span></a>
                                     <a href="" class="ready"><span>Готово</span></a>
 
                                     <br class="cb">
@@ -1353,19 +1277,11 @@
 
                             </span>
 
+                        </label>
 
-
-
-
-                        </div>
-
-                        <div class="label-block">
-
-                            <label for="when">
-                                <p>Когда</p>
-                            </label>
-
-                            <input type="text" name="" placeholder="Адрес или название места" id="when">
+                        <label>
+                            <p>Когда</p>
+                            <input type="text" name="" placeholder="Адрес или название места">
 
                             <span class="other-parametrs when">
                                 <label>
@@ -1393,42 +1309,36 @@
 
                                         <label>
                                             <select name="days" id="">
-                                                <option value="">00</option>
-                                                <option value="">01</option>
-                                                <option value="">02</option>
-                                                <option value="">03</option>
-                                                <option value="">04</option>
-                                                <option value="">05</option>
-                                                <option value="">06</option>
-                                                <option value="">07</option>
-                                                <option value="">08</option>
-                                                <option value="">09</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
                                                 <option value="">10</option>
                                                 <option value="">11</option>
                                                 <option value="">12</option>
-                                                <option value="">13</option>
-                                                <option value="">14</option>
-                                                <option value="">15</option>
-                                                <option value="">16</option>
-                                                <option value="">17</option>
-                                                <option value="">18</option>
-                                                <option value="">19</option>
-                                                <option value="">20</option>
-                                                <option value="">21</option>
-                                                <option value="">22</option>
-                                                <option value="">23</option>
                                             </select>
                                             <i class="symbol">&#203;</i>
                                         </label>
 
                                         <label>
                                             <select class="month" id="">
-                                                <option value="">00</option>
+                                                <option value="">1</option>
+                                                <option value="">2</option>
+                                                <option value="">3</option>
+                                                <option value="">4</option>
+                                                <option value="">5</option>
+                                                <option value="">6</option>
+                                                <option value="">7</option>
+                                                <option value="">8</option>
+                                                <option value="">9</option>
                                                 <option value="">10</option>
-                                                <option value="">20</option>
-                                                <option value="">30</option>
-                                                <option value="">40</option>
-                                                <option value="">50</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
                                             </select>
                                             <i class="symbol">&#203;</i>
                                         </label>
@@ -1436,8 +1346,9 @@
                                     </span>
 
                                 </span>
-
                                 </label>
+
+
 
                                 <span class="buttons">
                                     <a href="" class="back"><span>Отмена</span></a>
@@ -1447,22 +1358,19 @@
                                 </span>
 
                             </span>
-
-                            </div>
+                        </label>
 
                         <label class="auth hidden">
                             <p>Телефон</p>
                             <a href="">+375 29 767-37-00</a>
                         </label>
 
-                        <div class="label-block">
-                            <label class="n-auth">
-                                <p>Телефон</p>
-                                <input type="text" name="phone" placeholder="+375 29 767-37-00">
-                            </label>
-                        </div>
+                        <label class="n-auth">
+                            <p>Телефон</p>
+                            <input type="text" name="" placeholder="+375 29 767-37-00">
+                        </label>
 
-                        <button data-step="#step2">Я Хочу Заказать такси</button>
+                        <button>Я Хочу Заказать такси</button>
                     </form>
                 </div>
             </div>
@@ -1472,7 +1380,7 @@
           <div id="step2" class="hidden">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">Î</span><span class="sr-only"></span></button>
-                <h2 class="modal-title">Подтверждение  <br>
+                <h2 class="modal-title" id="myModalLabel">Подтверждение  <br>
                         телефона</h2>
               </div>
 
@@ -1496,7 +1404,7 @@
                                 не пришел</a>
                             </div>
 
-                            <button data-step="#step3">Подтвердить телефон</button>
+                            <button>Подтвердить телефон</button>
                         </form>
 
                   </div>
@@ -1506,7 +1414,7 @@
           <div id="step3" class="hidden">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">Î</span><span class="sr-only"></span></button>
-                <h2 class="modal-title">Ищем машину  <br>
+                <h2 class="modal-title" id="myModalLabel">Ищем машину  <br>
 поблизости</h2>
               </div>
 
@@ -1520,7 +1428,7 @@
                       <p>пр-т Независимости, 123/2, кв.12</p>
                       <span>Жду около второго подъезда</span>
                   </div>
-                  <a class="btn" data-step="#step4">Отмена заказа</a>
+                  <a class="btn">Отмена заказа</a>
               </div>
           </div>
 
@@ -1528,7 +1436,7 @@
           <div id="step4" class="hidden">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">Î</span><span class="sr-only"></span></button>
-                <h2 class="modal-title">Ура, Мы нашли <br>
+                <h2 class="modal-title" id="myModalLabel">Ура, Мы нашли <br>
                         машину!</h2>
               </div>
 
@@ -1562,23 +1470,23 @@
                         </div>
 
                         <div class="pull-right">
-                            <a href="" class="i-will-go" data-step="#step5">я поеду!</a>
+                            <a href="" class="i-will-go">я поеду!</a>
                         </div>
                   </div>
               </div>
           </div>
 
 
-          <div id="step5" class="hidden">
+          <div id="step4" class="hidden">
               <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">Î</span><span class="sr-only"></span></button>
-                <h2 class="modal-title">Водитель <br>
+                <h2 class="modal-title" id="myModalLabel">Водитель <br>
                 уже в пути</h2>
               </div>
 
               <div class="modal-body">
                   <div class="table row">
-                    <img src="img/car-on-the-road.png" alt="" class="car">
+                    <img src="img/passat-min.png" alt="" class="car">
                       <div class="col-xs-6 first">
                           <p>Автомобиль</p>
                           <p>Номер</p>
@@ -1622,68 +1530,9 @@
       </div>
     </div>
 
-
-    <!-- Reviews popups start -->
-
-
-    <!-- Add review popup -->
-
-    <div class="modal fade reviews-modal-add" id="add-review" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">&#206;</span><span class="sr-only"></span></button>
-
-            <h2 class="modal-title">Оставить отзыв</h2>
-          </div>
-          <div class="modal-body">
-            <form action="" method="">
-                <textarea name="" placeholder="Дарим 2 км за подробный, конструктивный отзыв."></textarea>
-
-                <div class="public-reviews">
-                    <p>Опубликовать через</p>
-                    <a href="" class="social-fb">Фейсбук</a>
-                    <a href="" class="social-vk">Вконтакте</a>
-                    <a href="" class="social-tw">Твиттер</a>
-                </div>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Add review popup end -->
-
-
-
-
-    <!-- Tnx add review block -->
-
-    <div class="modal fade reviews-modal-tnx" id="tnx-reviews" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true" class="symbol close-icon">&#206;</span><span class="sr-only"></span></button>
-
-            <h2 class="modal-title">Спасибо за отзыв!</h2>
-          </div>
-          <div class="modal-body">
-            <p>Нам важно, что вы думаете. Обратная связь помогает нам делать Пятницу лучше.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Tnx add review block end -->
-
-
-    <!-- Reviews popups end -->
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.maskedinput.js"></script>
     <script src="js/scrollspy.js"></script>
     <script src="js/main.js" class="hidden-xs"></script>
   </body>
