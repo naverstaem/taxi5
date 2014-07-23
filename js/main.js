@@ -20,6 +20,7 @@ $(document).ready(function(){
         }
     }
 
+
    headerScroll();
 
     $(document).on('scroll', headerScroll);
@@ -120,14 +121,44 @@ $(document).ready(function(){
         radioBtnChange();
     });
 
-    $('#step1 form >label>input[type=text]').click(function(){
+    // $(".other-parametrs.visible").removeClass('visible');
+
+    $('form >.label-block>input[type=text]').click(function(){
         $(".other-parametrs.visible").removeClass('visible');
         $(this).siblings('.other-parametrs').addClass('visible');
+        $('.back-wrapper').addClass('visible');
 
         $(this).siblings('.other-parametrs').find('.back').click(function(){
             event.preventDefault();
             $(this).parents('.other-parametrs').removeClass('visible');
         });
+    });
+
+    $('.back-wrapper').click(function(){
+        $(this).removeClass('visible');
+        $('.other-parametrs').removeClass('visible');
+    });
+
+
+    $('[data-step]').click(function(){
+        event.preventDefault();
+        $(this).parents('[id ^= step]').addClass('hidden');
+        var newEl = $(this).attr('data-step');
+        $(newEl).removeClass('hidden');
+    });
+
+    $('input[name="phone"]').mask("+375 (99) 999-99-99");
+
+
+    $(".with-table-lb input[type=checkbox]").click(function(){
+        $(this).siblings('i').toggleClass('active');
+        $(this).parents('.r').siblings('.comment').toggleClass('hidden');
+    });
+
+    $(".whence-auth li").click(function(){
+        $(".other-parametrs.visible").removeClass('visible');
+        var userSelect = $(this).find('.txt').text();
+        $(this).parents('.other-parametrs').siblings('input').val(userSelect);
     });
 
 });
